@@ -3,63 +3,207 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Minejobs</title>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <HeaderHomePage />
+      <main>
+        <section className="lowongan-populer">
+          <div className="container">
+            <h2>Lowongan Populer</h2>
+            <div className="row">
+              <div className="col-md-4 col-sm-6 pl-3">
+                <div className="card" style={{ width: "340px" }}>
+                  <img
+                    className="card-img-top"
+                    src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <p className="job-position">Frontend Web Developer</p>
+                    <p className="job-corporate">Minejobs</p>
+                    <p className="job-location">Semarang</p>
+                    <p className="job-salary">Rp. 3.000.000 - 5.000.000</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 col-sm-6 pl-3">
+                <div className="card" style={{ width: "340px" }}>
+                  <img
+                    className="card-img-top"
+                    src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <p className="job-position">Frontend Web Developer</p>
+                    <p className="job-corporate">Minejobs</p>
+                    <p className="job-location">Semarang</p>
+                    <p className="job-salary">Rp. 3.000.000 - 5.000.000</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 col-sm-6 pl-3">
+                <div className="card" style={{ width: "340px" }}>
+                  <img
+                    className="card-img-top"
+                    src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <p className="job-position">Frontend Web Developer</p>
+                    <p className="job-corporate">Minejobs</p>
+                    <p className="job-location">Semarang</p>
+                    <p className="job-salary">Rp. 3.000.000 - 5.000.000</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 col-sm-6 pt-3 pl-3">
+                <div className="card" style={{ width: "340px" }}>
+                  <img
+                    className="card-img-top"
+                    src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <p className="job-position">Frontend Web Developer</p>
+                    <p className="job-corporate">Minejobs</p>
+                    <p className="job-location">Semarang</p>
+                    <p className="job-salary">Rp. 3.000.000 - 5.000.000</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 col-sm-6 pt-3">
+                <div className="card" style={{ width: "340px" }}>
+                  <img
+                    className="card-img-top"
+                    src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <p className="job-position">Frontend Web Developer</p>
+                    <p className="job-corporate">Minejobs</p>
+                    <p className="job-location">Semarang</p>
+                    <p className="job-salary">Rp. 3.000.000 - 5.000.000</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4 col-sm-6 pt-3">
+                <div className="card" style={{ width: "340px" }}>
+                  <img
+                    className="card-img-top"
+                    src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <p className="job-position">Frontend Web Developer</p>
+                    <p className="job-corporate">Minejobs</p>
+                    <p className="job-location">Semarang</p>
+                    <p className="job-salary">Rp. 3.000.000 - 5.000.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="temukan-lebih-banyak mb-5">
+          <div className="container">
+            <h2 className="mb-5">Temukan Lebih Banyak</h2>
+            <div className="row">
+              <div className="col-md-12">
+                <div className="card mb-5">
+                  <div className="container">
+                    <div className="row pr-5 pl-5 pt-5 pb-5 ml-3 mr-3">
+                      <div className="col-md-4">
+                        <div className="title">
+                          <h3>Mengapa Harus Membuat Akun di Minejobs</h3>
+                          <p>
+                            Leverage agile frameworks to provide a robust
+                            synopsis for high level overviews. Iterative
+                            approaches to corporate strategy foster
+                            collaborative thinking to further the overall value
+                            proposition. Organically grow the holistic world
+                            view of disruptive innovation via workplace
+                            diversity and empowerment.
+                        </p>
+                        </div>
+                      </div>
+                      <div className="col-md-6 offset-md-2">
+                        <img
+                          className="img-fluid"
+                          src="https://images.unsplash.com/photo-1452830978618-d6feae7d0ffa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="partner-kami mb-5">
+          <div className="container ">
+            <div className="row justify-content-center">
+              <div className="col-md-4">
+                <div
+                  id="carouselExampleIndicators"
+                  className="carousel slide"
+                  data-ride="carousel"
+                >
+                  <ol className="carousel-indicators">
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to={0}
+                      className="active"
+                    />
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to={1}
+                    />
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to={2}
+                    />
+                  </ol>
+                  <div className="carousel-inner">
+                    <div className="carousel-item active">
+                      <img
+                        className="d-block w-100"
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        alt="First slide"
+                      />
+                    </div>
+                    <div className="carousel-item">
+                      <img
+                        className="d-block w-100"
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        alt="Second slide"
+                      />
+                    </div>
+                    <div className="carousel-item">
+                      <img
+                        className="d-block w-100"
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        alt="Third slide"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3 offset-md-1">
+                <h3 className="mt-3">Partner Kami</h3>
+                <p className="mt-3">
+                  Gabung sekarang dan dapatkan kesempatan untuk membangun
+                  kesuksesan di tempat impian anda Organically grow the holistic
+                  world view of disruptive innovation via workplace diversity
+                  and empowerment.
+              </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    </>
   )
 }
