@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+header nav {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header nav .navbar-brand {
+  font-weight: 500;
+}
+
+header nav .navbar-brand span {
+  color: #E67815;
+}
+
+header nav .navbar-nav {
+  margin-left: auto;
+  overflow: hidden;
+}
+
+header nav .navbar-nav a {
+  margin-right: 50px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+header nav .navbar-nav a:nth-child(3) {
+  margin-right: 0px;
+}
+
+header nav .navbar-nav a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  border-bottom: 2px solid #E67815;
+}
+
+header nav .navbar-nav .btn {
+  border-radius: 200px;
+  width: 149px;
+  background: #E67815;
+}
+
+header nav .navbar-nav .btn:hover {
+  background: #ff8202;
+  border-bottom: none;
+  -webkit-transform: none;
+          transform: none;
+  margin-bottom: 1px;
+}
+
+.jumbotron {
+  background-image: url("https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  height: 706px;
+  width: 100%;
+  color: #ffffff;
+  background-size: cover;
+  position: relative;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron .tagline {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  margin-top: 250px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+.jumbotron .bg-white {
+  margin: 0 20px;
+  width: 884px;
+  height: 64px;
+  text-align: center;
+  line-height: 64px;
+}
+
+.jumbotron .bg-white input {
+  margin: auto 0px;
+  border: none;
+  outline: none;
+  padding: 0 10px 0px 50px;
+  width: 700px;
+  display: inline;
+}
+
+.jumbotron .bg-white button {
+  width: 150px;
+}
+
+.jumbotron .bg-white .btn-warning {
+  background: #E67815;
+  color: #ffffff;
+}
+
+.jumbotron::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0px;
+  -webkit-filter: 50%;
+          filter: 50%;
+}
+
+.lowongan-populer {
+  margin: 50px 0px;
+}
+
+.lowongan-populer h2 {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+.lowongan-populer .card .card-body {
+  font-size: 14px;
+}
+
+.lowongan-populer .card .card-body .job-position {
+  font-weight: bold;
+}
+
+.lowongan-populer .card .card-body .job-corporate {
+  margin-top: -15px;
+}
+
+.lowongan-populer .card .card-body .job-location {
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: -10px;
+}
+
+.lowongan-populer .card .card-body .job-salary {
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: -10px;
+}
+
+.temukan-lebih-banyak h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.temukan-lebih-banyak h2::after {
+  content: '';
+  display: block;
+  width: 123px;
+  border-bottom: 2px solid #E67815;
+  position: relative;
+  z-index: 1;
+  margin: 10px auto;
+}
+
+.temukan-lebih-banyak .card {
+  -webkit-box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.temukan-lebih-banyak .card .title h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.temukan-lebih-banyak .card .title p {
+  font-size: 16px;
+}
+
+.partner-kami h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.partner-kami p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+footer {
+  background: #322D2D;
+  color: #FDFDFD;
+}
+
+footer h3 {
+  font-size: 18px;
+}
+
+footer p {
+  width: 113px;
+}
+
+footer a {
+  color: #AABCFB;
+}
+
+footer .bg-gray {
+  background: #4B4A4A;
+  font-size: 12px;
+  padding: 8px 0;
+}
+
+.modal h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal p {
+  color: #696969;
+  font-size: 16px;
+}
+
+.modal-body a {
+  color: black;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal-body a:hover {
+  text-decoration: none;
+}
+
+.bg-form-input {
+  background: rgba(51, 51, 51, 0.06);
+}
+/*# sourceMappingURL=style.css.map */
