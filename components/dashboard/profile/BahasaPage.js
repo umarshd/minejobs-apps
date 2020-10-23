@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function BahasaPage() {
   return (
@@ -82,5 +82,5 @@ export default function BahasaPage() {
         </div>
       </div>
     </>
-  )
+  );
 }
