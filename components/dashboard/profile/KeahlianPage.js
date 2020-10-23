@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function KeahlianPage() {
   return (
@@ -13,7 +13,8 @@ export default function KeahlianPage() {
         <div className="card-right-keahlian">
           <div className="container">
             <h5>
-              <i className="fas fa-poll-h" />Keahlian
+              <i className="fas fa-poll-h" />
+              Keahlian
             </h5>
             <hr />
             <div className="row justify-content-center">
@@ -23,7 +24,12 @@ export default function KeahlianPage() {
                     <div className="col-md-12 col-lg-5">
                       <div className="form-group">
                         <label htmlFor="keahlian">Keahlian</label>
-                        <input type="text" className="form-control" id="namaTempatBelajar" placeholder="Input text" />
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="namaTempatBelajar"
+                          placeholder="Input text"
+                        />
                       </div>
                     </div>
                     <div className="col-md-12 col-lg-5">
@@ -45,7 +51,10 @@ export default function KeahlianPage() {
                   </div>
                   <div className="row">
                     <div className="col text-center">
-                      <button type="submit" className="btn btn-primary mb-3 mt-3">
+                      <button
+                        type="submit"
+                        className="btn btn-primary mb-3 mt-3"
+                      >
                         Simpan
                       </button>
                     </div>
@@ -57,5 +66,5 @@ export default function KeahlianPage() {
         </div>
       </div>
     </>
-  )
+  );
 }
