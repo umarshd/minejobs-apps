@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,IADE,CACF,qCAAqC,CAAC;EACpC,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,KAAK;EACjB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,kBAAkB;CAGpB;;AAR1B,AAOI,IAPA,CACF,qCAAqC,CAMnC,UAAU,CAAC;EACT,UAAU,EAAE,GAAG;CAAG",
+    "sources": [
+        "detailundanganinterview.sass"
+    ],
+    "names": [],
+    "file": "detailundanganinterview.css"
+}
