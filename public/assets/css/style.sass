@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+$font-tagline: 'Quicksand', sans-serif
+$font-primary: 'Roboto', sans-serif
+$color-primary: #E67815
+$color-modal: #696969
+
+body
+  font-family: $font-primary
+  font-weight: 400
+
+header
+  nav
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3)
+    .navbar-brand
+      font-weight: 500
+      span
+        color: $color-primary
+    .navbar-nav
+      margin-left: auto
+      overflow: hidden
+
+      a
+        margin-right: 50px
+        transition: transform 0.5s
+        font-family: $font-primary
+        text-transform: uppercase
+        font-size: 14px
+
+      a:nth-child(3)
+        margin-right: 0px
+
+      a:hover
+        transform: translateY(-3px)
+        border-bottom: 2px solid #E67815
+
+      .btn
+        border-radius: 200px
+        width: 149px
+        background: #E67815
+
+      .btn:hover
+        background: #ff8202
+        border-bottom: none
+        transform: none
+        margin-bottom: 1px
+
+.jumbotron
+  background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')
+  height: 706px
+  width: 100%
+  color: #ffffff
+  background-size: cover
+  position: relative
+
+  .container
+    position: relative
+    z-index: 1
+
+  .tagline
+    filter: brightness(100%)
+    margin-top: 250px
+    font-family: $font-tagline
+    font-weight: 700
+
+  .bg-white
+    margin: 0 20px
+    width: 884px
+    height: 64px
+    text-align: center
+    line-height: 64px
+
+    input
+      margin: auto 0px
+      border: none
+      outline: none
+      padding: 0 10px 0px 50px
+      width: 700px
+      display: inline
+
+    button
+      width: 150px
+
+    .btn-warning
+      background: #E67815
+      color: #ffffff
+
+.jumbotron::after
+  content: ''
+  width: 100%
+  height: 100%
+  display: block
+  background: rgba(0, 0, 0, 0.5)
+  position: absolute
+  bottom: 0px
+  filter: 50%
+
+.lowongan-populer
+  margin: 50px 0px
+
+  h2
+    margin-bottom: 25px
+    font-size: 16px
+    font-weight: bold
+    font-family: $font-primary
+    color: black
+  .card
+
+    .card-body
+      font-size: 14px
+      .job-position
+        font-weight: bold
+      .job-corporate
+        margin-top: -15px
+      .job-location
+        color: rgba(0, 0, 0, 0.7)
+        margin-top: -10px
+      .job-salary
+        color: rgba(0, 0, 0, 0.7)
+        margin-top: -10px
+
+.temukan-lebih-banyak
+  h2
+    text-align: center
+    font-size: 16px
+    font-weight: bold
+  h2::after
+    content: ''
+    display: block
+    width: 123px
+    border-bottom: 2px solid $color-primary
+    position: relative
+    z-index: 1
+    margin:  10px auto
+
+  .card
+    box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.5)
+    border: none
+
+    .title
+      h3
+        font-size: 24px
+        font-weight: bold
+      p
+        font-size: 16px
+
+.partner-kami
+  h3
+    font-size: 24px
+    font-weight: bold
+  p
+    font-size: 16px
+    font-weight: 300
+
+footer
+  background: #322D2D
+  color: #FDFDFD
+
+  h3
+    font-size: 18px
+
+  p
+    width: 113px
+
+  a
+    color: #AABCFB
+
+  .bg-gray
+    background: #4B4A4A
+    font-size: 12px
+    padding: 8px 0
+
+.modal
+  h4
+    font-size: 24px
+    font-weight: bold
+
+  p
+    color: $color-modal
+    font-size: 16px
+
+.modal-body
+  a
+    color: black
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2)
+
+  a:hover
+    text-decoration: none
+
+.bg-form-input
+  background: rgba(51, 51, 51, 0.06)
