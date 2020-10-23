@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+header nav {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header nav .navbar-brand {
+  font-weight: 500;
+}
+
+header nav .navbar-brand span {
+  color: #E67815;
+}
+
+header nav .navbar-nav {
+  margin-left: auto;
+}
+
+header nav .navbar-nav a {
+  margin-right: 50px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+header nav .navbar-nav a:nth-child(3) {
+  margin-right: 0px;
+}
+
+header nav .navbar-nav a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  border-bottom: 2px solid #E67815;
+}
+
+header nav form {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  padding: 5px 20px 5px 5px;
+  height: 5vh;
+}
+
+header nav form input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+header nav form button {
+  border: none;
+  background: none;
+  display: inline;
+}
+
+header nav form button i {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+main .alert-custom {
+  color: white;
+  background: #E6AB75;
+}
+
+main .alert-custom a {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  color: white;
+}
+
+main .alert-custom a:hover {
+  text-decoration: none;
+  color: white;
+  background: none;
+}
+
+main a {
+  color: black;
+  text-decoration: none;
+}
+
+main a i {
+  color: black;
+  margin: 10px;
+}
+
+main a:hover {
+  color: black;
+  text-decoration: none;
+  background: rgba(230, 120, 21, 0.2);
+}
+
+main .container {
+  margin-top: 100px;
+}
+
+main .card-left-pengalaman {
+  padding: 10px;
+  margin-bottom: 50px;
+  min-height: 600px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main .card-left-pengalaman .container {
+  margin-top: 0px;
+}
+
+main .card-left-pengalaman .profile img {
+  margin: 10px 0px;
+}
+
+main .card-left-pengalaman .profile h5 {
+  margin: 10px 0px;
+}
+
+main .card-left-pengalaman .profile a:hover {
+  background: none;
+}
+
+main .card-left-pengalaman .link-card-left-pengalaman a {
+  margin: 5px 0px;
+  display: block;
+}
+
+main .card-right-pengalaman {
+  padding: 10px;
+  margin-bottom: 50px;
+  min-height: 600px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main .card-right-pengalaman .container {
+  margin-top: 0px;
+}
+
+main .card-right-pengalaman label {
+  font-size: 14px;
+}
+
+main .card-right-pengalaman a:hover {
+  background: none;
+}
+
+main .card-right-pengalaman i {
+  margin-top: 160%;
+}
+
+main .card-right-pengalaman h5 i {
+  color: black;
+  margin: 10px;
+}
+
+footer {
+  background: #322D2D;
+  color: #FDFDFD;
+}
+
+footer .bg-gray {
+  background: #4B4A4A;
+  font-size: 12px;
+  padding: 8px 0;
+}
+
+footer .row .col-md-3 .row .col-md-12 img {
+  height: 24px;
+}
+
+footer h3 {
+  font-size: 18px;
+}
+
+footer p {
+  width: 113px;
+}
+
+footer a {
+  color: #AABCFB;
+}
+
+@media (max-width: 576px) {
+  header form {
+    position: relative;
+    height: 8vh;
+    margin-top: 10px;
+  }
+  header form input {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+  }
+  header form button i {
+    position: absolute;
+    right: 0;
+    top: -23px;
+  }
+  main .container {
+    margin-top: 100px;
+  }
+  main .alert-custom {
+    margin: 10px 0px;
+    text-align: justify;
+  }
+  main .alert-custom a {
+    right: -230px;
+    bottom: 12px;
+  }
+  main .card-left-pengalaman {
+    min-height: 400px;
+    margin-bottom: 0px;
+  }
+  main .card-right-pengalaman {
+    min-height: 400px;
+  }
+  main .card-right-pengalaman form i {
+    text-align: center;
+    margin-top: 0px;
+    display: block;
+  }
+  footer .row {
+    margin-top: 20px;
+  }
+  footer .row .col-md-3 {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header form {
+    position: relative;
+    height: 8vh;
+    margin-top: 10px;
+  }
+  header form input {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+  }
+  header form button i {
+    position: absolute;
+    right: 0;
+    top: -23px;
+  }
+  main .alert-custom {
+    margin: 10px 0px;
+    height: 65px;
+  }
+  main .alert-custom a {
+    display: block;
+    right: 0px;
+  }
+  main .container {
+    margin-top: 100px;
+  }
+  main .card-left-pengalaman {
+    min-height: 400px;
+    margin-bottom: 0px;
+  }
+  main .card-right-pengalaman {
+    min-height: 400px;
+  }
+  main .card-right-pengalaman form i {
+    text-align: center;
+    margin-top: 0px;
+    display: block;
+  }
+  footer .row {
+    margin-top: 20px;
+  }
+  footer .row .col-md-3 {
+    margin-top: 20px;
+  }
+  footer .row .col-md-3 img {
+    height: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  header form {
+    position: relative;
+    height: 8vh;
+  }
+  header form input {
+    position: relative;
+    margin-top: 2px;
+    width: 100%;
+  }
+  header form button i {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+  }
+  main .alert-custom {
+    font-size: 14px;
+  }
+  main .alert-custom a {
+    position: absolute;
+    padding-left: 100px;
+    font-size: 14px;
+  }
+  main .card-left-pengalaman {
+    min-height: 400px;
+    margin-bottom: 0px;
+  }
+  main .card-left-pengalaman a {
+    font-size: 14px;
+  }
+  main .card-right-pengalaman {
+    min-height: 400px;
+  }
+  main .card-right-pengalaman a {
+    font-size: 14px;
+  }
+  main .card-right-pengalaman form i {
+    text-align: center;
+    margin-top: 0px;
+    display: block;
+  }
+  footer .row .col-md-3 .row .col-md-12 img {
+    height: 16px;
+  }
+  footer .row .col-md-3 .row .col-md-12 p {
+    font-size: 12px;
+  }
+  footer h3 {
+    font-size: 18px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  footer a {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=pengalaman.css.map */
