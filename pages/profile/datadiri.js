@@ -1,5 +1,5 @@
 import React from "react";
-import DataDiriPage from "../../components/dashboard/DataDiriPage";
+import DataDiriPage from "../../components/dashboard/profile/DataDiriPage";
 import Header from "../../components/layouts/Header";
 import Sidebar from "../../components/layouts/dashboard/profile/SidebarProfile";
 import Head from "next/head";
