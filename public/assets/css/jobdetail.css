@@ -1,0 +1,22 @@
+main .card-right-job-detail {
+  margin-bottom: 50px;
+  min-height: 600px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main .card-right-job-detail .container {
+  margin-top: 0px;
+  margin: 0px;
+}
+
+main .card-right-job-detail .jumbotron {
+  background-image: none;
+  background: grey;
+  height: 100px;
+}
+
+main .card-right-job-detail .jumbotron:after {
+  content: none;
+}
+/*# sourceMappingURL=jobdetail.css.map */
