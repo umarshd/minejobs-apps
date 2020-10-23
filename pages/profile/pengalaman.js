@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import PengalamanPage from "../../components/dashboard/PengalamanPage";
+import PengalamanPage from "../../components/dashboard/profile/PengalamanPage";
 import Header from "../../components/layouts/Header";
 import Sidebar from "../../components/layouts/dashboard/profile/SidebarProfile";
 
