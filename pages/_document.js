@@ -25,7 +25,7 @@ class MyDocument extends Document {
             <link rel="stylesheet" href="/assets/css/pendidikan.css" />
             <link rel="stylesheet" href="/assets/css/pengalaman.css" />
             <link rel="stylesheet" href="/assets/css/preferensiPekerjaan.css" />
-            <link rel="stylesheet" href="/assets/css/profileSetup.css" />
+            <link rel="stylesheet" href="/assets/css/profilesetup.css" />
             <link rel="stylesheet" href="/assets/css/unggahResume.css" />
             <link rel="stylesheet" href="/assets/css/editprofile.css" />
             <link rel="stylesheet" href="/assets/css/carilowongan.css" />
