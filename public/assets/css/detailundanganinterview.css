@@ -1,0 +1,12 @@
+main .card-right-detail-undangan-interview {
+  padding: 10px;
+  margin-bottom: 50px;
+  min-height: 600px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main .card-right-detail-undangan-interview .container {
+  margin-top: 0px;
+}
+/*# sourceMappingURL=detailundanganinterview.css.map */
