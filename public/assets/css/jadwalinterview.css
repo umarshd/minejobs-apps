@@ -1,0 +1,41 @@
+main .card-right-jadwal-interview {
+  padding: 10px;
+  margin-bottom: 50px;
+  min-height: 600px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main .card-right-jadwal-interview .container {
+  margin-top: 0px;
+}
+
+main .card-right-jadwal-interview .card {
+  margin-top: 20px;
+}
+
+main .card-right-jadwal-interview .btn-action a {
+  font-size: 12px;
+}
+
+main .card-right-jadwal-interview .btn-action .btn-block {
+  text-align: start;
+}
+
+main .card-right-jadwal-interview .job-title {
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+}
+
+main .card-right-jadwal-interview .job-description {
+  color: #989595;
+  font-size: 14px;
+}
+
+main .card-right-jadwal-interview span {
+  font-weight: 400;
+  color: #989595;
+  font-size: 14px;
+}
+/*# sourceMappingURL=jadwalinterview.css.map */
