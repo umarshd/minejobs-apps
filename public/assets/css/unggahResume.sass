@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+$font-tagline: 'Quicksand', sans-serif
+$font-primary: 'Roboto', sans-serif
+$color-primary: #E67815
+$color-modal: #696969
+$card-bg: #f9f9f9
+
+body
+  font-family: $font-primary
+  font-weight: 400
+
+header
+  nav
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3)
+    .navbar-brand
+      font-weight: 500
+      span
+        color: $color-primary
+    .navbar-nav
+      margin-left: auto
+
+      a
+        margin-right: 50px
+        transition: transform 0.5s
+        font-family: $font-primary
+        font-size: 14px
+
+      a:nth-child(3)
+        margin-right: 0px
+
+      a:hover
+        transform: translateY(-3px)
+        border-bottom: 2px solid #E67815
+
+    form
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3)
+      padding: 5px 20px 5px 5px
+      height: 5vh
+      input
+        background: none
+        border: none
+        outline: none
+
+      button
+        border: none
+        background: none
+        display: inline
+        i
+          color: rgba(0, 0, 0, 0.5)
+
+main
+
+  .alert-custom
+    color: white
+    background: #E6AB75
+
+    a
+      position: absolute
+      right: 0
+      margin-right: 15px
+      color: white
+
+    a:hover
+      text-decoration: none
+      color: white
+      background: none
+
+  a
+    color: black
+    text-decoration: none
+    i
+      color: black
+      margin: 10px
+  a:hover
+    color: black
+    text-decoration: none
+    background: rgba(230, 120, 21, 0.2)
+
+  .container
+    margin-top: 100px
+
+  .card-left-unggahBerkas
+    padding: 10px
+    margin-bottom: 50px
+    min-height: 600px
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2)
+
+    .container
+      margin-top: 0px
+
+    .profile
+      img
+        margin: 10px 0px
+
+      h5
+        margin: 10px 0px
+
+      a:hover
+        background: none
+
+    .link-card-left-unggahBerkas
+      a
+        margin: 5px 0px
+        display: block
+
+  .card-right-unggahBerkas
+    padding: 10px
+    margin-bottom: 50px
+    min-height: 600px
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2)
+
+    .container
+      margin-top: 0px
+
+    label
+      font-size: 14px
+
+    a:hover
+      background: none
+
+    i
+      margin-top: 160%
+
+    h5
+      i
+        color: black
+        margin: 10px
+
+footer
+  background: #322D2D
+  color: #FDFDFD
+
+  .bg-gray
+    background: #4B4A4A
+    font-size: 12px
+    padding: 8px 0
+
+  .row
+    .col-md-3
+      .row
+        .col-md-12
+          img
+            height: 24px
+
+  h3
+    font-size: 18px
+
+  p
+    width: 113px
+
+  a
+    color: #AABCFB
+
+// extra small device 
+@media ( max-width: 576px )
+  header
+    form
+      position: relative
+      height: 8vh
+      margin-top: 10px
+      input
+        position: relative
+        margin-top: 10px
+        width: 100%
+      button
+        i
+          position: absolute
+          right: 0
+          top: -23px
+
+  main
+    .container
+      margin-top: 100px
+
+    .alert-custom
+      margin: 10px 0px
+      text-align: justify
+
+      a
+        right: -230px
+        bottom: 12px
+
+    .card-left-unggahBerkas
+      min-height: 400px
+      margin-bottom: 0px
+
+    .card-right-unggahBerkas
+      min-height: 400px
+
+      form
+
+        i
+          text-align: center
+          margin-top: 0px
+          display: block
+
+  footer
+    .row
+      margin-top: 20px
+
+      .col-md-3
+        margin-top: 20px
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 768px)
+  header
+    form
+      position: relative
+      height: 8vh
+      margin-top: 10px
+      input
+        position: relative
+        margin-top: 10px
+        width: 100%
+      button
+        i
+          position: absolute
+          right: 0
+          top: -23px
+  main
+    .alert-custom
+      margin: 10px 0px
+      height: 65px
+
+      a
+        display: block
+        right: 0px
+
+    .container
+      margin-top: 100px
+
+    .card-left-unggahBerkas
+      min-height: 400px
+      margin-bottom: 0px
+
+    .card-right-unggahBerkas
+      min-height: 400px
+
+      form
+
+        i
+          text-align: center
+          margin-top: 0px
+          display: block
+
+  footer
+    .row
+      margin-top: 20px
+
+      .col-md-3
+        margin-top: 20px
+        img
+          height: 16px
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px)
+  header
+    form
+      position: relative
+      height: 8vh
+      input
+        position: relative
+        margin-top: 2px
+        width: 100%
+      button
+        i
+          position: absolute
+          right: 0
+          bottom: 5px
+
+  main
+    .alert-custom
+      font-size: 14px
+      a
+        position: absolute
+        padding-left: 100px
+        font-size: 14px
+
+    .card-left-unggahBerkas
+      min-height: 400px
+      margin-bottom: 0px
+
+      a
+        font-size: 14px
+
+    .card-right-unggahBerkas
+      min-height: 400px
+
+      a
+        font-size: 14px
+
+      form
+
+        i
+          text-align: center
+          margin-top: 0px
+          display: block
+
+  footer
+    .row
+      .col-md-3
+        .row
+          .col-md-12
+            img
+              height: 16px
+            p
+              font-size: 12px
+
+    h3
+      font-size: 18px
+
+    p
+      font-size: 14px
+
+    a
+      font-size: 14px
