@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Header from "../../components/layouts/Header";
 import Sidebar from "../../components/layouts/dashboard/Sidebar";
-import BahasaPage from "../../components/dashboard/BahasaPage";
+import BahasaPage from "../../components/dashboard/profile/BahasaPage";
 
 export default function bahasa() {
   return (
