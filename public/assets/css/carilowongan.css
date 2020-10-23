@@ -1,0 +1,39 @@
+main .card-right-cari-lowongan {
+  padding: 10px;
+  margin-bottom: 50px;
+  min-height: 600px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main .card-right-cari-lowongan .container {
+  margin-top: 0px;
+}
+
+main .card-right-cari-lowongan .card {
+  margin-top: 20px;
+}
+
+main .card-right-cari-lowongan .btn-filter {
+  border: none;
+  background: none;
+  padding: none;
+}
+
+main .card-right-cari-lowongan .job-description {
+  color: #989595;
+  font-size: 14px;
+}
+
+main .card-right-cari-lowongan .job-description .job-title {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+main .btn-custom {
+  background: #E67815;
+  color: #ffffff;
+  width: 100px;
+}
+/*# sourceMappingURL=carilowongan.css.map */
