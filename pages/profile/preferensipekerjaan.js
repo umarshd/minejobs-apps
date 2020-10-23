@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import PreferensiPekerjaanPage from "../../components/dashboard/PreferensiPekerjaanPage";
+import PreferensiPekerjaanPage from "../../components/dashboard/profile/PreferensiPekerjaanPage";
 import Header from "../../components/layouts/Header";
 import Sidebar from "../../components/layouts/dashboard/profile/SidebarProfile";
 
