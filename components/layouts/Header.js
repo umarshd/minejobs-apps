@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function Header() {
   return (
@@ -36,7 +36,7 @@ export default function Header() {
                 </div>
               </form>
               <div className="navbar-nav">
-                <a className="nav-item nav-link" href="#">
+                <a className="nav-item nav-link" href="/editprofile">
                   Dashboard
                 </a>
                 <li className="nav-item dropdown">
@@ -73,5 +73,5 @@ export default function Header() {
         </nav>
       </header>
     </>
-  )
+  );
 }
