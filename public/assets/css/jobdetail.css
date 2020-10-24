@@ -12,8 +12,16 @@ main .card-right-job-detail .container {
 }
 
 main .card-right-job-detail .jumbotron-job-detail {
-  background: #F3F3F3;
-  height: 100px;
+  min-height: 100px;
+}
+
+main .card-right-job-detail .jumbotron-job-detail .bg-company {
+  position: absolute;
+  margin-left: 200px;
+}
+
+main .card-right-job-detail .jumbotron-job-detail .foto-company {
+  margin-top: 150px;
 }
 
 main .card-right-job-detail .jumbotron:after {
