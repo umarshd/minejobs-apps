@@ -47,7 +47,7 @@ export default function PendidikanPage() {
                       <div className="form-group">
                         <label htmlFor="waktuMulai">Waktu Mulai</label>
                         <select className="custom-select" id="tahunMulai">
-                          <option selected>Bulan Mulai</option>
+                          <option selected>Tahun Mulai</option>
                           <option value={1}>One</option>
                           <option value={2}>Two</option>
                           <option value={3}>Three</option>
@@ -61,7 +61,7 @@ export default function PendidikanPage() {
                           <span>(Atau perkiraan selesai)</span>
                         </label>
                         <select className="custom-select" id="tahunSelesai">
-                          <option selected>Bulan Selesai</option>
+                          <option selected>Tahun Selesai</option>
                           <option value={1}>One</option>
                           <option value={2}>Two</option>
                           <option value={3}>Three</option>
