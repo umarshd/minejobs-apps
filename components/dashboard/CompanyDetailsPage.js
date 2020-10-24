@@ -33,6 +33,18 @@ export default function CompanyDetailsPage() {
                   </p>
                 </div>
               </div>
+              <div className="col-md-12">
+                <div className="row">
+                  <div className="col-md-4 industri">
+                    <h5>Industri</h5>
+                    <p>Teknologi Informasi</p>
+                  </div>
+                  <div className="col-md-4 website">
+                    <h5>Website</h5>
+                    <p>Orangtuagroup.com</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="row mb-4 ">
