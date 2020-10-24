@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function ProfileSetupPage() {
   return (
@@ -9,9 +10,9 @@ export default function ProfileSetupPage() {
           <a href="#">KIRIM ULANG EMAIL</a>
         </div>
         <div className="card card-right-profile-setup">
-          <a href="#" className="p-4">
-            Buat Profile Sekarang
-          </a>
+          <Link href="/../datadiri" className="p-4">
+            <a className="p-4">Buat Profile Sekarang</a>
+          </Link>
         </div>
       </div>
     </>
