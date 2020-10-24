@@ -190,7 +190,7 @@ export default function LamarPekerjaanPage() {
                   </div>
                   <div className="col-md-3">
                     <a
-                      href="/jobdetail"
+                      href="/editprofile"
                       className="btn btn-secondary btn-block"
                     >
                       Lihat Profile
