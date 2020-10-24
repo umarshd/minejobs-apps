@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function HeaderHomePage() {
   return (
@@ -58,7 +58,7 @@ export default function HeaderHomePage() {
           aria-hidden="true"
         >
           <div className="modal-dialog" role="document">
-            <div className="modal-content">
+            <div className="modal-content p-5">
               <div className="modal-body text-center">
                 <h4>Gabung Sekarang</h4>
                 <p>Buat Akun</p>
@@ -132,7 +132,7 @@ export default function HeaderHomePage() {
                           defaultValue="option1"
                         />
                         <label
-                          className="form-check-label"
+                          className="form-check-label mt-4 ml-1"
                           htmlFor="inlineCheckbox1"
                         >
                           Saya telah setuju dengan syarat dan ketentuan yang
@@ -159,7 +159,7 @@ export default function HeaderHomePage() {
           aria-hidden="true"
         >
           <div className="modal-dialog" role="document">
-            <div className="modal-content">
+            <div className="modal-content p-5">
               <div className="modal-body text-center">
                 <h4>Masuk</h4>
                 <p>Temukan Pekerjaan Impian</p>
@@ -228,5 +228,5 @@ export default function HeaderHomePage() {
         </div>
       </header>
     </>
-  )
+  );
 }
