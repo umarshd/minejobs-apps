@@ -9,11 +9,19 @@ export default function JobDetailPage() {
           <a href="#">KIRIM ULANG EMAIL</a>
         </div>
         <div className="card-right-job-detail p-3">
-          <div className="jumbotron--job-detail ">
+          <div className="jumbotron-job-detail ">
             <div className="row">
               <div className="col-md-12">
-                <img className="rounded-circle" height="64" width="64" />
-                <div className="corporate">Orangtua Group</div>
+                <img src="/ot-bg-none.png" className="bg-company" />
+                <img
+                  className="rounded-circle foto-company"
+                  height="96"
+                  width="96"
+                  src="/bg-home.jpg"
+                />
+                <div className="corporate font-weight-bold mt-2">
+                  <h5>Orangtua Group</h5>
+                </div>
               </div>
               <div className="col-md-9">
                 <div className="address-corporate">
