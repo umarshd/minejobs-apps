@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function JadwalInterviewPage() {
   return (
@@ -12,7 +12,7 @@ export default function JadwalInterviewPage() {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <p>Jadwal Interview</p>
+                <p className="font-weight-bold">Jadwal Interview</p>
               </div>
             </div>
             <div className="row">
@@ -25,7 +25,7 @@ export default function JadwalInterviewPage() {
                     <div className="col-md-5 mb-auto mt-auto">
                       <div className="job-description">
                         <div className="job-title">
-                          Full Stack Web Developer <span>(Orangtua Group)</span>
+                          Full Stack Web <span>(Orangtua Group)</span>
                         </div>
                         <div className="tanggal">Tanggal : 12/03/2019</div>
                         <div className="waktu">Waktu : 10.00 WIB</div>
@@ -36,13 +36,18 @@ export default function JadwalInterviewPage() {
                     </div>
                     <div className="col-md-3 mb-auto mt-auto ml-5 btn-action">
                       <a href="#" className="btn btn-success btn-block">
-                        <img src="/assets/icon/hangouts-meet.svg" height="16" />
+                        <img
+                          src="/assets/icon/hangouts-meet.svg"
+                          height="16"
+                          className="mr-2"
+                        />
                         Link Video Conference
                       </a>
                       <a href="#" className="btn btn-primary mt-2 btn-block">
                         <img
                           src="/assets/icon/google-calendar.svg"
                           height="16"
+                          className="mr-2"
                         />
                         Setel Pengingat
                       </a>
@@ -59,7 +64,7 @@ export default function JadwalInterviewPage() {
                     <div className="col-md-5 mb-auto mt-auto">
                       <div className="job-description">
                         <div className="job-title">
-                          Full Stack Web Developer <span>(Orangtua Group)</span>
+                          Full Stack Web <span>(Orangtua Group)</span>
                         </div>
                         <div className="tanggal">Tanggal : 12/03/2019</div>
                         <div className="waktu">Waktu : 10.00 WIB</div>
@@ -70,13 +75,18 @@ export default function JadwalInterviewPage() {
                     </div>
                     <div className="col-md-3 mb-auto mt-auto ml-5 btn-action">
                       <a href="#" className="btn btn-success btn-block">
-                        <img src="/assets/icon/hangouts-meet.svg" height="16" />
+                        <img
+                          src="/assets/icon/hangouts-meet.svg"
+                          height="16"
+                          className="mr-2"
+                        />
                         Link Video Conference
                       </a>
                       <a href="#" className="btn btn-primary mt-2 btn-block">
                         <img
                           src="/assets/icon/google-calendar.svg"
                           height="16"
+                          className="mr-2"
                         />
                         Setel Pengingat
                       </a>
@@ -93,7 +103,7 @@ export default function JadwalInterviewPage() {
                     <div className="col-md-5 mb-auto mt-auto">
                       <div className="job-description">
                         <div className="job-title">
-                          Full Stack Web Developer <span>(Orangtua Group)</span>
+                          Full Stack Web <span>(Orangtua Group)</span>
                         </div>
                         <div className="tanggal">Tanggal : 12/03/2019</div>
                         <div className="waktu">Waktu : 10.00 WIB</div>
@@ -104,13 +114,18 @@ export default function JadwalInterviewPage() {
                     </div>
                     <div className="col-md-3 mb-auto mt-auto ml-5 btn-action">
                       <a href="#" className="btn btn-success btn-block">
-                        <img src="/assets/icon/hangouts-meet.svg" height="16" />
+                        <img
+                          src="/assets/icon/hangouts-meet.svg"
+                          height="16"
+                          className="mr-2"
+                        />
                         Link Video Conference
                       </a>
                       <a href="#" className="btn btn-primary mt-2 btn-block">
                         <img
                           src="/assets/icon/google-calendar.svg"
                           height="16"
+                          className="mr-2"
                         />
                         Setel Pengingat
                       </a>
@@ -127,7 +142,7 @@ export default function JadwalInterviewPage() {
                     <div className="col-md-5 mb-auto mt-auto">
                       <div className="job-description">
                         <div className="job-title">
-                          Full Stack Web Developer <span>(Orangtua Group)</span>
+                          Full Stack Web <span>(Orangtua Group)</span>
                         </div>
                         <div className="tanggal">Tanggal : 12/03/2019</div>
                         <div className="waktu">Waktu : 10.00 WIB</div>
@@ -138,13 +153,18 @@ export default function JadwalInterviewPage() {
                     </div>
                     <div className="col-md-3 mb-auto mt-auto ml-5 btn-action">
                       <a href="#" className="btn btn-success btn-block">
-                        <img src="/assets/icon/hangouts-meet.svg" height="16" />
+                        <img
+                          src="/assets/icon/hangouts-meet.svg"
+                          height="16"
+                          className="mr-2"
+                        />
                         Link Video Conference
                       </a>
                       <a href="#" className="btn btn-primary mt-2 btn-block">
                         <img
                           src="/assets/icon/google-calendar.svg"
                           height="16"
+                          className="mr-2"
                         />
                         Setel Pengingat
                       </a>
@@ -157,5 +177,5 @@ export default function JadwalInterviewPage() {
         </div>
       </div>
     </>
-  )
+  );
 }
