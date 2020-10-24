@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function LamaranTerkirimPage() {
   return (
@@ -12,7 +12,7 @@ export default function LamaranTerkirimPage() {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <p>Lamaran Terkirim</p>
+                <p className="font-weight-bold">Lamaran Terkirim</p>
               </div>
             </div>
             <div className="row">
@@ -115,7 +115,7 @@ export default function LamaranTerkirimPage() {
                   <ul className="pagination">
                     <li className="page-item">
                       <a className="page-link" href="#">
-                        Previous
+                        &lt;
                       </a>
                     </li>
                     <li className="page-item">
@@ -135,7 +135,7 @@ export default function LamaranTerkirimPage() {
                     </li>
                     <li className="page-item">
                       <a className="page-link" href="#">
-                        Next
+                        &gt;
                       </a>
                     </li>
                   </ul>
@@ -146,5 +146,5 @@ export default function LamaranTerkirimPage() {
         </div>
       </div>
     </>
-  )
+  );
 }
