@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 
 export default function EditProfilePage() {
   return (
     <>
-      <div class="col-md-7 col-lg-9">
-        <div class="alert alert-custom" role="alert">
+      <div className="col-md-7 col-lg-9">
+        <div className="alert alert-custom" role="alert">
           Hai Budi, Silahkan cek email kamu untuk melakukan verifikasi akun
           <a href="#" class="ml-5">
             KIRIM ULANG EMAIL
           </a>
         </div>
-        <div class="card-right-edit-profile">
-          <div class="row justify-content-center">
-            <div class="col-md-12">
-              <div className="profile card p-3 mb-2 mt-2">
+        <div className="card-right-edit-profile pl-3 pr-3 pt-1 pb-1">
+          <div className="row justify-content-center">
+            <div className="col-md-12">
+              <div className="profile p-3 mb-2 mt-2">
                 <div className="row">
                   <div className="col-md-2">
                     <div className="foto-profile">
@@ -29,15 +29,15 @@ export default function EditProfilePage() {
                     <div className="profile-detail ">
                       <h5>Budi Gunawan</h5>
                       <p>
-                        <i class="fas fa-map-marker-alt pr-2"></i>Jawa Tengah,
-                        Semarang
+                        <i className="fas fa-map-marker-alt pr-2"></i>Jawa
+                        Tengah, Semarang
                       </p>
                       <p>
-                        <i class="fas fa-envelope pr-2"></i>
+                        <i className="fas fa-envelope pr-2"></i>
                         budigunawan@gmail.com
                       </p>
                       <p>
-                        <i class="fas fa-id-card pr-2"></i>+62 8223400993
+                        <i className="fas fa-id-card pr-2"></i>+62 8223400993
                       </p>
                     </div>
                   </div>
@@ -158,5 +158,5 @@ export default function EditProfilePage() {
         </div>
       </div>
     </>
-  )
+  );
 }
