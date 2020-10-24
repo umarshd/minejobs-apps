@@ -180,7 +180,7 @@ export default function CariLowonganPage() {
                     </div>
                     <div className="col-md-2 mr-2 mt-auto mb-auto">
                       <a
-                        href="/lamarpekerjaan"
+                        href="/jobdetail"
                         className="btn btn-primary btn-block"
                       >
                         Detail
@@ -214,7 +214,7 @@ export default function CariLowonganPage() {
                     </div>
                     <div className="col-md-2 mr-2 mt-auto mb-auto">
                       <a
-                        href="/lamarpekerjaan"
+                        href="/jobdetail"
                         className="btn btn-primary btn-block"
                       >
                         Detail
@@ -248,7 +248,7 @@ export default function CariLowonganPage() {
                     </div>
                     <div className="col-md-2 mr-2 mt-auto mb-auto">
                       <a
-                        href="/lamarpekerjaan"
+                        href="/jobdetail"
                         className="btn btn-primary btn-block"
                       >
                         Detail
@@ -282,7 +282,7 @@ export default function CariLowonganPage() {
                     </div>
                     <div className="col-md-2 mr-2 mt-auto mb-auto">
                       <a
-                        href="/lamarpekerjaan"
+                        href="/jobdetail"
                         className="btn btn-primary btn-block"
                       >
                         Detail
