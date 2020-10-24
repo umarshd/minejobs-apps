@@ -5,6 +5,10 @@ body {
   font-weight: 400;
 }
 
+.btn-primary {
+  background: #0076DE;
+}
+
 header nav {
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
@@ -234,6 +238,10 @@ footer .bg-gray {
 
 .modal-body a:hover {
   text-decoration: none;
+}
+
+.form-check-inline {
+  margin-top: -100px;
 }
 
 .bg-form-input {
