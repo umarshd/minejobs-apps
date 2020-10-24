@@ -138,6 +138,7 @@ main .card-right-preferensi {
   min-height: 600px;
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #F4F4F4;
 }
 
 main .card-right-preferensi .container {
