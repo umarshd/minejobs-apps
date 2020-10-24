@@ -189,10 +189,16 @@ export default function LamarPekerjaanPage() {
                     <div className="school">Universitas Dian Nuswantoro</div>
                   </div>
                   <div className="col-md-3">
-                    <a href="#" className="btn btn-secondary btn-block">
+                    <a
+                      href="/jobdetail"
+                      className="btn btn-secondary btn-block"
+                    >
                       Lihat Profile
                     </a>
-                    <a href="#" className="btn btn-secondary btn-block">
+                    <a
+                      href="/editprofile"
+                      className="btn btn-secondary btn-block"
+                    >
                       Edit Profile
                     </a>
                     <a href="#" className="btn btn-primary btn-block">
