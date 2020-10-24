@@ -47,7 +47,7 @@ export default function JobDetailPage() {
                 <a href="#" className="btn btn-secondary btn-block">
                   Simpan Lowongan
                 </a>
-                <a href="#" className="btn btn-primary btn-block">
+                <a href="/lamarpekerjaan" className="btn btn-primary btn-block">
                   Kirim Lamaran
                 </a>
               </div>
