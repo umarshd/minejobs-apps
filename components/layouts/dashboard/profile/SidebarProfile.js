@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
 
 export default function SidebarProfile() {
   return (
@@ -20,38 +21,52 @@ export default function SidebarProfile() {
               <hr />
             </div>
             <div className="link-card-left-bahasa">
-              <a href="/profile/pengalaman">
-                <i className="fas fa-briefcase" />
-                Pengalaman
-              </a>
-              <a href="/profile/pendidikan">
-                <i className="fas fa-user-graduate" />
-                Pendidikan
-              </a>
-              <a href="/profile/keahlian">
-                <i className="fas fa-poll-h" />
-                Keahlian
-              </a>
-              <a href="/profile/bahasa">
-                <i className="fas fa-globe" />
-                Bahasa
-              </a>
-              <a href="/profile/preferensipekerjaan">
-                <i className="fas fa-clone" />
-                Preferensi Pekerjaan
-              </a>
-              <a href="/profile/datadiri">
-                <i className="fas fa-address-card" />
-                Data Diri
-              </a>
-              <a href="/profile/unggahresume">
-                <i className="fas fa-cloud-upload-alt" />
-                Unggah Resume
-              </a>
+              <Link href="/profile/pengalaman">
+                <a>
+                  <i className="fas fa-briefcase" />
+                  Pengalaman
+                </a>
+              </Link>
+              <Link href="/profile/pendidikan">
+                <a>
+                  <i className="fas fa-user-graduate" />
+                  Pendidikan
+                </a>
+              </Link>
+              <Link href="/profile/keahlian">
+                <a>
+                  <i className="fas fa-poll-h" />
+                  Keahlian
+                </a>
+              </Link>
+              <Link href="/profile/bahasa">
+                <a>
+                  <i className="fas fa-globe" />
+                  Bahasa
+                </a>
+              </Link>
+              <Link href="/profile/preferensipekerjaan">
+                <a>
+                  <i className="fas fa-clone" />
+                  Preferensi Pekerjaan
+                </a>
+              </Link>
+              <Link href="/profile/datadiri">
+                <a>
+                  <i className="fas fa-address-card" />
+                  Data Diri
+                </a>
+              </Link>
+              <Link href="/profile/unggahresume">
+                <a>
+                  <i className="fas fa-cloud-upload-alt" />
+                  Unggah Resume
+                </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
