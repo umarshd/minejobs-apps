@@ -9,28 +9,40 @@ export default function Sidebar() {
           <div className="container">
             <div className="link-card-left-bahasa">
               <Link href="/carilowongan">
-                <i className="fas fa-search" />
-                Cari Lowongan
+                <a>
+                  <i className="fas fa-search" />
+                  Cari Lowongan
+                </a>
               </Link>
               <Link href="/editprofile">
-                <i className="fas fa-user" />
-                Edit Profile
+                <a>
+                  <i className="fas fa-user" />
+                  Edit Profile
+                </a>
               </Link>
               <Link href="/lamaranterkirim">
-                <i className="fas fa-paper-plane" />
-                Lamaran Terkirim
+                <a>
+                  <i className="fas fa-paper-plane" />
+                  Lamaran Terkirim
+                </a>
               </Link>
               <Link href="/undanganinterview">
-                <i className="fas fa-info-circle" />
-                Undangan Interview
+                <a>
+                  <i className="fas fa-info-circle" />
+                  Undangan Interview
+                </a>
               </Link>
               <Link href="/jadwalinterview">
-                <i className="fas fa-calendar-day" />
-                Jadwal Interview
+                <a>
+                  <i className="fas fa-calendar-day" />
+                  Jadwal Interview
+                </a>
               </Link>
               <Link href="/lamarantersimpan">
-                <i className="fas fa-archive" />
-                Lamaran Tersimpan
+                <a>
+                  <i className="fas fa-archive" />
+                  Lamaran Tersimpan
+                </a>
               </Link>
             </div>
           </div>
