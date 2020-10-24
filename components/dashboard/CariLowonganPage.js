@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function CariLowonganPage() {
   return (
@@ -35,7 +35,7 @@ export default function CariLowonganPage() {
                 </form>
               </div>
               <div className="col-md-2 mt-1">
-                <p>Filter :</p>
+                <p className="font-weight-bold">Filter :</p>
               </div>
               <div className="col-md-2 ">
                 <div className="btn-group">
@@ -301,7 +301,7 @@ export default function CariLowonganPage() {
                   <ul className="pagination">
                     <li className="page-item">
                       <a className="page-link" href="#">
-                        Previous
+                        &lt;
                       </a>
                     </li>
                     <li className="page-item">
@@ -321,7 +321,7 @@ export default function CariLowonganPage() {
                     </li>
                     <li className="page-item">
                       <a className="page-link" href="#">
-                        Next
+                        &gt;
                       </a>
                     </li>
                   </ul>
@@ -332,5 +332,5 @@ export default function CariLowonganPage() {
         </div>
       </div>
     </>
-  )
+  );
 }
