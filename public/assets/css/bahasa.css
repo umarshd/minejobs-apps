@@ -8,6 +8,9 @@ body {
 header nav {
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header nav .bg-light {
   background-color: rgba(242, 242, 242, 0.9);
 }
 
