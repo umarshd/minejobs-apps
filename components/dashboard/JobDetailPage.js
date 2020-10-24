@@ -20,7 +20,9 @@ export default function JobDetailPage() {
                   src="/bg-home.jpg"
                 />
                 <div className="corporate font-weight-bold mt-2">
-                  <h5>Orangtua Group</h5>
+                  <a href="/companydetails">
+                    <h5>Orangtua Group</h5>
+                  </a>
                 </div>
               </div>
               <div className="col-md-9">
