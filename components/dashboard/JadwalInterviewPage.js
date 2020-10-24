@@ -35,7 +35,11 @@ export default function JadwalInterviewPage() {
                       </div>
                     </div>
                     <div className="col-md-3 mb-auto mt-auto ml-5 btn-action">
-                      <a href="#" className="btn btn-success btn-block">
+                      <a
+                        href="#"
+                        className="btn btn-success btn-block disabled"
+                        disabled
+                      >
                         <img
                           src="/assets/icon/hangouts-meet.svg"
                           height="16"
