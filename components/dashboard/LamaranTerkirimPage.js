@@ -32,7 +32,7 @@ export default function LamaranTerkirimPage() {
                           Jawa Tengah, Semarang
                         </div>
                         <div className="salary">
-                          Tp.4.000.000 - RP.8.000.000 / Bulan
+                          Rp.4.000.000 - Rp.8.000.000 / Bulan
                         </div>
                       </div>
                     </div>
@@ -55,7 +55,7 @@ export default function LamaranTerkirimPage() {
                           Jawa Tengah, Semarang
                         </div>
                         <div className="salary">
-                          Tp.4.000.000 - RP.8.000.000 / Bulan
+                          Rp.4.000.000 - Rp.8.000.000 / Bulan
                         </div>
                       </div>
                     </div>
@@ -78,7 +78,7 @@ export default function LamaranTerkirimPage() {
                           Jawa Tengah, Semarang
                         </div>
                         <div className="salary">
-                          Tp.4.000.000 - RP.8.000.000 / Bulan
+                          Rp.4.000.000 - Rp.8.000.000 / Bulan
                         </div>
                       </div>
                     </div>
@@ -101,7 +101,7 @@ export default function LamaranTerkirimPage() {
                           Jawa Tengah, Semarang
                         </div>
                         <div className="salary">
-                          Tp.4.000.000 - RP.8.000.000 / Bulan
+                          Rp.4.000.000 - Rp.8.000.000 / Bulan
                         </div>
                       </div>
                     </div>
