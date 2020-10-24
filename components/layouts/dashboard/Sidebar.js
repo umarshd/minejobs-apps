@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function Sidebar() {
   return (
@@ -25,7 +25,7 @@ export default function Sidebar() {
               </a>
               <a href="/jadwalinterview">
                 <i className="fas fa-calendar-day" />
-                Jawdal Interview
+                Jadwal Interview
               </a>
               <a href="/lamarantersimpan">
                 <i className="fas fa-archive" />
@@ -36,5 +36,5 @@ export default function Sidebar() {
         </div>
       </div>
     </>
-  )
+  );
 }
