@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+$font-tagline: 'Quicksand', sans-serif
+$font-primary: 'Roboto', sans-serif
+$color-primary: #E67815
+$color-modal: #696969
+
+body
+  font-family: $font-primary
+  font-weight: 400
+
+.btn-primary
+  background: #0076DE
+
+header
+  nav
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3)
+    .navbar-brand
+      font-weight: 500
+      span
+        color: $color-primary
+
+    .navbar-nav
+      margin-left: auto
+      overflow: hidden
+
+      a
+        margin-right: 50px
+        transition: transform 0.5s
+        font-family: $font-primary
+        text-transform: uppercase
+        font-size: 14px
+
+      a:nth-child(3)
+        margin-right: 0px
+
+      a:hover
+        transform: translateY(-3px)
+        border-bottom: 2px solid #E67815
+
+      .btn
+        border-radius: 200px
+        width: 100%
+        background: #E67815
+        margin-right: 0px
+
+      .btn:hover
+        background: #ff8202
+        border-bottom: none
+        transform: none
+        margin-bottom: 1px
+
+.jumbotron-company
+  background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
+  height: 706px
+  width: 100%
+  background-size: cover
+  position: relative
+
+  .container
+    position: relative
+    z-index: 1
+
+  .card
+    margin-top: 150px
+    form
+      label
+        font-weight: 600
+
+      span
+        font-size: 12px
+        width: 65%
+        display: block
+
+.jumbotron-company::after
+  content: ''
+  width: 100%
+  height: 100%
+  display: block
+  background: rgba(0, 0, 0, 0.5)
+  position: absolute
+  bottom: 0px
+  filter: 50%
+
+main
+  .company-promo
+    margin-top: 100px
+    margin-bottom: 100px
+
+    .content-company-promo
+      p
+        width: 70%
+
+  h4
+    display: block
+
+  .temukan-orang
+    .card-img-top
+      height: 200px
+
+  .bg-custom-secondary
+    background-color: #F1F1F1 !important
+
+footer
+  background: #322D2D
+  color: #FDFDFD
+
+  h3
+    font-size: 18px
+
+  p
+    width: 113px
+
+  a
+    color: #AABCFB
+
+  .bg-gray
+    background: #4B4A4A
+    font-size: 12px
+    padding: 8px 0
+
+.modal
+  h4
+    font-size: 24px
+    font-weight: bold
+
+  p
+    color: $color-modal
+    font-size: 16px
+
+.modal-body
+  a
+    color: black
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2)
+
+  a:hover
+    text-decoration: none
+
+.form-check-inline
+  margin-top: -100px
+
+.bg-form-input
+  background: rgba(51, 51, 51, 0.06)
