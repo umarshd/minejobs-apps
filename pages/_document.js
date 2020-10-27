@@ -35,6 +35,8 @@ class MyDocument extends Document {
               rel="stylesheet"
               href="/assets/css/detailundanganinterview.css"
             />
+            <link rel="stylesheet" href="/assets/css/stylecompany.css" />
+            <link rel="stylesheet" href="/assets/css/dashboardcompany.css" />
             <link
               rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
