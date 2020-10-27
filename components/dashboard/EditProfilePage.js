@@ -6,7 +6,7 @@ export default function EditProfilePage() {
       <div className="col-md-7 col-lg-9">
         <div className="alert alert-custom" role="alert">
           Hai Budi, Silahkan cek email kamu untuk melakukan verifikasi akun
-          <a href="#" class="ml-5">
+          <a href="#" className="ml-5">
             KIRIM ULANG EMAIL
           </a>
         </div>
