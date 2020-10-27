@@ -1,0 +1,32 @@
+main .container-custom {
+  margin: 0px 50px;
+}
+
+main .alert-custom-company {
+  color: white;
+  background-color: #E6AB75;
+  padding: 12px 0px;
+}
+
+main .col-custom .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .col-custom .row .col-md-3 {
+  padding: 0px;
+}
+
+main .dashboard-company h6 a:hover {
+  background: none;
+}
+
+main .dashboard-company .container {
+  margin-top: 0px;
+}
+/*# sourceMappingURL=dashboardcompany.css.map */
