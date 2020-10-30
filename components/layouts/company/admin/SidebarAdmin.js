@@ -1,36 +1,49 @@
+import Link from "next/link";
 import React from "react";
 
 export default function SidebarAdmin() {
   return (
     <>
       <div className="col-md-5 col-lg-3">
-        <div className="card-left-bahasa">
+        <div className="card-left-bahasa bg-light">
           <div className="container">
             <div className="link-card-left-bahasa">
-              <a href="/carilowongan">
-                <i className="fas fa-search" />
-                Cari Lowongan
-              </a>
-              <a href="/editprofile">
-                <i className="fas fa-user" />
-                Edit Profile
-              </a>
-              <a href="/lamaranterkirim">
-                <i className="fas fa-paper-plane" />
-                Lamaran Terkirim
-              </a>
-              <a href="/undanganinterview">
-                <i className="fas fa-info-circle" />
-                Undangan Interview
-              </a>
-              <a href="/jadwalinterview">
-                <i className="fas fa-calendar-day" />
-                Jawdal Interview
-              </a>
-              <a href="/lamarantersimpan">
-                <i className="fas fa-archive" />
-                Lamaran Tersimpan
-              </a>
+              <Link href="/company/admin/perusahaan">
+                <a>
+                  <i className="fas fa-search" />
+                  Perusahaan
+                </a>
+              </Link>
+              <Link href="/company/admin/pencarikerja">
+                <a>
+                  <i className="fas fa-user" />
+                  Pencari Kerja
+                </a>
+              </Link>
+              <Link href="/company/admin/aturiklan">
+                <a>
+                  <i className="fas fa-paper-plane" />
+                  Atur Iklan
+                </a>
+              </Link>
+              <Link href="#">
+                <a>
+                  <i className="fas fa-info-circle" />
+                  Request Credit
+                </a>
+              </Link>
+              <Link href="/company/admin/tambahadmin">
+                <a>
+                  <i className="fas fa-calendar-day" />
+                  Tambah Admin
+                </a>
+              </Link>
+              <Link href="#">
+                <a>
+                  <i className="fas fa-archive" />
+                  Ganti Password
+                </a>
+              </Link>
             </div>
           </div>
         </div>
