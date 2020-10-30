@@ -34,7 +34,6 @@ header nav .navbar-nav a {
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
   font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
   font-size: 14px;
 }
 
