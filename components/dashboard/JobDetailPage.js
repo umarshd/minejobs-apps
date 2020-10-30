@@ -21,32 +21,32 @@ export default function JobDetailPage() {
                 />
                 <div className="corporate font-weight-bold mt-2">
                   <a href="/companydetails">
-                    <h5>Orangtua Group</h5>
+                    <h5 className="font-weight-bold">Orangtua Group</h5>
                   </a>
                 </div>
               </div>
               <div className="col-md-9">
                 <div className="address-corporate">
-                  <h5>Alamat Kantor</h5>
-                  <p>
+                  <h5 className="font-weight-bold">Alamat Kantor</h5>
+                  <p className="text-secondary">
                     Wisma Staco) Jalan Casablanca Kav. 18, Menteng Dalam, Tebet,
                     Menteng Dalam, RT.4/RW.12, Menteng Dalam, Tebet, 12960,
                     South Jakarta, Daerah Khusus Ibukota Jakarta, Indonesia
                   </p>
                   <div className="row">
                     <div className="col-md-6 industri">
-                      <h5>Industri</h5>
-                      <p>Teknologi Informasi</p>
+                      <h5 className="font-weight-bold">Industri</h5>
+                      <p className="text-secondary">Teknologi Informasi</p>
                     </div>
                     <div className="col-md-6 website">
-                      <h5>Website</h5>
-                      <p>Orangtuagroup.com</p>
+                      <h5 className="font-weight-bold">Website</h5>
+                      <p className="text-secondary">Orangtuagroup.com</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-3">
-                <a href="#" className="btn btn-secondary btn-block">
+                <a href="#" className="btn bg-custom-10 btn-block">
                   Simpan Lowongan
                 </a>
                 <a href="/lamarpekerjaan" className="btn btn-primary btn-block">
@@ -58,8 +58,8 @@ export default function JobDetailPage() {
           <div className="row mb-4 ">
             <div className="col-md-12 ">
               <div className="card p-3">
-                <h5>Deskripsi Pekerjaan</h5>
-                <p>
+                <h5 className="font-weight-bold">Deskripsi Pekerjaan</h5>
+                <p className="text-secondary">
                   Wisma Staco) Jalan Casablanca Kav. 18, Menteng Dalam, Tebet,
                   Menteng Dalam, RT.4/RW.12, Menteng Dalam, Tebet, 12960, South
                   Jakarta, Daerah Khusus Ibukota Jakarta, Indonesia
@@ -68,24 +68,30 @@ export default function JobDetailPage() {
             </div>
             <div className="col-md-12 ">
               <div className="card p-3">
-                <h5>Kualifikasi Minimal</h5>
-                <p>* 3 - 5 tahun pengalaman kerja sebagai project manager</p>
-                <p>* Berpengalaman menggunakan framework Scrum</p>
-                <p>* Memiliki jiwa kepemimpinan dan komunikasi yang baik</p>
+                <h5 className="font-weight-bold">Kualifikasi Minimal</h5>
+                <p className="text-secondary">
+                  * 3 - 5 tahun pengalaman kerja sebagai project manager
+                </p>
+                <p className="text-secondary">
+                  * Berpengalaman menggunakan framework Scrum
+                </p>
+                <p className="text-secondary">
+                  * Memiliki jiwa kepemimpinan dan komunikasi yang baik
+                </p>
               </div>
             </div>
             <div className="col-md-12 ">
               <div className="card p-3">
-                <h5>Benefit</h5>
-                <p>Tunjangan Kesehatan</p>
-                <p>Tunjangan Pensiun</p>
-                <p>Uang Transport</p>
+                <h5 className="font-weight-bold">Benefit</h5>
+                <p className="text-secondary">Tunjangan Kesehatan</p>
+                <p className="text-secondary">Tunjangan Pensiun</p>
+                <p className="text-secondary">Uang Transport</p>
               </div>
             </div>
             <div className="col-md-12 ">
               <div className="card p-3">
-                <h5>Tentang Orangtua Group</h5>
-                <p>
+                <h5 className="font-weight-bold">Tentang Orangtua Group</h5>
+                <p className="text-secondary">
                   OT adalah perusahaan consumer goods yang memproduksi berbagai
                   macam produk kebutuhan sehari-hari. Berawal dari minuman
                   kesehatan tradisional dengan bahan dan proses terstandar
