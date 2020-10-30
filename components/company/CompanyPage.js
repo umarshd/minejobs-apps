@@ -8,7 +8,7 @@ export default function CompanyPage() {
           <div className="col-md-10">
             <div className="row justify-content-center mb-5">
               <div className="col-md-8 text-center">
-                <h4>
+                <h4 className="font-weight-bold">
                   Minejobs Menawarkan Anda lebih <br />
                   dari sekedar iklan lowongan
                 </h4>
@@ -23,7 +23,7 @@ export default function CompanyPage() {
                 <img src="/bg-home.jpg" className="img-fluid" />
               </div>
               <div className="col-md-6">
-                <h4>
+                <h4 className="font-weight-bold">
                   Iklan Lowongan anda akan <br /> menarik jutaan kandidat
                 </h4>
                 <p>
@@ -34,7 +34,7 @@ export default function CompanyPage() {
                 </p>
               </div>
               <div className="col-md-6 mt-md-5">
-                <h4>
+                <h4 className="font-weight-bold">
                   Proses seleksi pelamar yang <br /> mudah dan efisien
                 </h4>
                 <p>
@@ -52,7 +52,7 @@ export default function CompanyPage() {
         </div>
       </section>
       <section className="temukan-orang mt-5">
-        <h4 className="text-center mb-4 mt-5">
+        <h4 className="text-center mb-4 mt-5 font-weight-bold">
           Kini Menemukan Orang yang Tepat <br /> Makin Mudah
         </h4>
         <div className="row mb-5 text-center">
@@ -65,7 +65,9 @@ export default function CompanyPage() {
                 alt="Card image cap"
               />
               <div className="card-body p-3 pl-5 pr-5 pb-5">
-                <h6>Wawancara Langsung Melalui Video Conference</h6>
+                <h6 className="font-weight-bold">
+                  Wawancara Langsung Melalui Video Conference
+                </h6>
               </div>
             </div>
           </div>
@@ -78,7 +80,9 @@ export default function CompanyPage() {
                 alt="Card image cap"
               />
               <div className="card-body p-3 pl-5 pr-5 pb-5">
-                <h6>Temukan Kandidat yang Tepat Sesuai Kebutuhan</h6>
+                <h6 className="font-weight-bold">
+                  Temukan Kandidat yang Tepat Sesuai Kebutuhan
+                </h6>
               </div>
             </div>
           </div>
@@ -91,7 +95,7 @@ export default function CompanyPage() {
                 alt="Card image cap"
               />
               <div className="card-body p-3 pl-5 pr-5 pb-5">
-                <h6>Mudah , Cepat, dan Praktis</h6>
+                <h6 className="font-weight-bold">Mudah , Cepat, dan Praktis</h6>
               </div>
             </div>
           </div>
