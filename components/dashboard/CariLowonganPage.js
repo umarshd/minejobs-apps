@@ -185,7 +185,7 @@ export default function CariLowonganPage() {
                       >
                         Detail
                       </a>
-                      <a href="#" className="btn btn-secondary btn-block">
+                      <a href="#" className="btn bg-custom-12 btn-block">
                         Simpan
                       </a>
                     </div>
@@ -219,7 +219,7 @@ export default function CariLowonganPage() {
                       >
                         Detail
                       </a>
-                      <a href="#" className="btn btn-secondary btn-block">
+                      <a href="#" className="btn bg-custom-12 btn-block">
                         Simpan
                       </a>
                     </div>
@@ -253,7 +253,7 @@ export default function CariLowonganPage() {
                       >
                         Detail
                       </a>
-                      <a href="#" className="btn btn-secondary btn-block">
+                      <a href="#" className="btn bg-custom-12 btn-block">
                         Simpan
                       </a>
                     </div>
@@ -287,7 +287,7 @@ export default function CariLowonganPage() {
                       >
                         Detail
                       </a>
-                      <a href="#" className="btn btn-secondary btn-block">
+                      <a href="#" className="btn bg-custom-12 btn-block">
                         Simpan
                       </a>
                     </div>
