@@ -39,34 +39,29 @@ export default function HeaderDashboardCompany() {
                 <a className="nav-item nav-link" href="/editprofile">
                   Dashboard
                 </a>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Budi
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn bg-none-nav dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Budi
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">
+                    Action
                   </a>
-                  <div
-                    className="dropdown-menu"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                    <div className="dropdown-divider" />
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </div>
-                </li>
+                  <a class="dropdown-item" href="#">
+                    Another action
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    Something else here
+                  </a>
+                </div>
               </div>
             </div>
           </div>
