@@ -37,21 +37,31 @@ export default function HeaderAdmin() {
               </form>
               <div className="navbar-nav">
                 <a className="nav-item nav-link" href="#">
-                  Dashboard
+                  <span>Dashboard</span>
                 </a>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Keluar
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn bg-none-nav dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Keluar
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">
+                    Action
                   </a>
-                </li>
+                  <a class="dropdown-item" href="#">
+                    Another action
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    Something else here
+                  </a>
+                </div>
               </div>
             </div>
           </div>
