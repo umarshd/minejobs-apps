@@ -20,6 +20,7 @@ header nav .navbar-brand span {
 
 header nav .navbar-nav {
   margin-left: auto;
+  overflow: hidden;
 }
 
 header nav .navbar-nav a {
