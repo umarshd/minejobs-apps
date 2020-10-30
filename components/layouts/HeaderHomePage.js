@@ -28,7 +28,7 @@ export default function HeaderHomePage() {
                   data-toggle="modal"
                   data-target="#signupModal"
                 >
-                  Daftar
+                  DAFTAR
                 </a>
                 <a
                   className="nav-item nav-link"
@@ -36,13 +36,13 @@ export default function HeaderHomePage() {
                   data-toggle="modal"
                   data-target="#loginModal"
                 >
-                  Masuk
+                  MASUK
                 </a>
                 <a
                   className="nav-item nav-link btn btn-warning text-white"
                   href="#"
                 >
-                  Perusahaan
+                  PERUSAHAAN
                 </a>
               </div>
             </div>
