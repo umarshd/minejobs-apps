@@ -99,13 +99,13 @@ export default function DashboardCompanyPage() {
                             </div>
                           </div>
                           <div className="col-md-3">
-                            <a className="btn btn-success btn-block">
+                            <a className="btn btn-success btn-block text-white">
                               Link Video Conference
                             </a>
-                            <a className="btn btn-primary btn-block">
+                            <a className="btn btn-primary btn-block text-white">
                               Lihat Profile
                             </a>
-                            <a className="btn btn-warning btn-block">
+                            <a className="btn bg-custom-4 btn-block text-white">
                               Pilih Kandidat
                             </a>
                           </div>
@@ -135,13 +135,13 @@ export default function DashboardCompanyPage() {
                             </div>
                           </div>
                           <div className="col-md-3">
-                            <a className="btn btn-success btn-block">
+                            <a className="btn btn-success btn-block text-white">
                               Link Video Conference
                             </a>
-                            <a className="btn btn-primary btn-block">
+                            <a className="btn btn-primary btn-block text-white">
                               Lihat Profile
                             </a>
-                            <a className="btn btn-warning btn-block">
+                            <a className="btn bg-custom-4 btn-block text-white">
                               Pilih Kandidat
                             </a>
                           </div>
@@ -171,13 +171,13 @@ export default function DashboardCompanyPage() {
                             </div>
                           </div>
                           <div className="col-md-3">
-                            <a className="btn btn-success btn-block">
+                            <a className="btn btn-success btn-block text-white">
                               Link Video Conference
                             </a>
-                            <a className="btn btn-primary btn-block">
+                            <a className="btn btn-primary btn-block text-white">
                               Lihat Profile
                             </a>
-                            <a className="btn btn-warning btn-block">
+                            <a className="btn bg-custom-4 btn-block text-white">
                               Pilih Kandidat
                             </a>
                           </div>
@@ -207,13 +207,13 @@ export default function DashboardCompanyPage() {
                             </div>
                           </div>
                           <div className="col-md-3">
-                            <a className="btn btn-success btn-block">
+                            <a className="btn btn-success btn-block text-white">
                               Link Video Conference
                             </a>
-                            <a className="btn btn-primary btn-block">
+                            <a className="btn btn-primary btn-block text-white">
                               Lihat Profile
                             </a>
-                            <a className="btn btn-warning btn-block">
+                            <a className="btn bg-custom-4 btn-block text-white">
                               Pilih Kandidat
                             </a>
                           </div>
