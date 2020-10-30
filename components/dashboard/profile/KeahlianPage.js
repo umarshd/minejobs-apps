@@ -27,7 +27,7 @@ export default function KeahlianPage() {
                         <input
                           type="text"
                           className="form-control"
-                          id="namaTempatBelajar"
+                          id="keahlian"
                           placeholder="Input text"
                         />
                       </div>
@@ -36,10 +36,11 @@ export default function KeahlianPage() {
                       <div className="form-group">
                         <label htmlFor="tingkatan">Tingkatan</label>
                         <select className="custom-select" id="tingkatan">
-                          <option selected>Select item...</option>
-                          <option value={1}>One</option>
-                          <option value={2}>Two</option>
-                          <option value={3}>Three</option>
+                          <option value="Pemula" selected>
+                            Pemula
+                          </option>
+                          <option value="Menengah">Menengah</option>
+                          <option value="Tingkat Lanjut">Tingkat Lanjut</option>
                         </select>
                       </div>
                     </div>
