@@ -17,12 +17,12 @@ export default function TampilKandidatPage() {
           <h4>Iklan Lowongan : Fullstack Web Developer</h4>
           <div className="row">
             <div className="col-md-3">
-              <a href="#" className="btn btn-warning btn-block">
+              <a href="#" className="btn bg-custom-5 btn-block text-white">
                 Edit Iklan
               </a>
             </div>
             <div className="col-md-3">
-              <a href="#" className="btn btn-danger btn-block">
+              <a href="#" className="btn bg-custom-6 btn-block">
                 Hentikan Iklan
               </a>
             </div>
@@ -34,14 +34,46 @@ export default function TampilKandidatPage() {
           <div className="container-custom">
             <p className="font-weight-bold">Filter :</p>
             <div className="row">
-              <div className="col-md-3">Belum Diproses (10)</div>
-              <div className="col-md-3">Tidak Sesuai (3)</div>
-              <div className="col-md-3">Kandidat Terpilih (5)</div>
-              <div className="col-md-3">List Wawancara (4)</div>
-              <div className="col-md-3">Wawancara Terdekat (5)</div>
-              <div className="col-md-3">Permintaan Atur Ulang (10)</div>
-              <div className="col-md-3">Menunggu Konfirmasi(2)</div>
-              <div className="col-md-3">Lihat Semua Jadwal (10)</div>
+              <div className="col-md-3">
+                <a href="#" className="bg-none">
+                  Belum Diproses (10)
+                </a>
+              </div>
+              <div className="col-md-3">
+                <a href="#" className="bg-none">
+                  Tidak Sesuai (3)
+                </a>
+              </div>
+              <div className="col-md-3">
+                <a href="#" className="bg-none">
+                  Kandidat Terpilih (5)
+                </a>
+              </div>
+              <div className="col-md-3">
+                <a href="#" className="bg-none">
+                  List Wawancara (4)
+                </a>
+              </div>
+              <div className="col-md-3">
+                <a href="#" className="bg-none">
+                  Wawancara Terdekat (5)
+                </a>
+              </div>
+              <div className="col-md-3">
+                <a href="#" className="bg-none">
+                  Permintaan Atur Ulang (10)
+                </a>
+              </div>
+              <div className="col-md-3">
+                <a href="#" className="bg-none">
+                  Menunggu Konfirmasi(2)
+                </a>
+              </div>
+              <div className="col-md-3">
+                <a href="#" className="bg-none">
+                  Lihat Semua Jadwal (10)
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -50,9 +82,9 @@ export default function TampilKandidatPage() {
         <div className="bg-custom-secondary mt-5 pt-4 pb-4 mb-4">
           <div className="container-custom">
             <div className="row mb-3">
-              <div className="col-md-9">Menampilkan : List Wawancara</div>
-              <div className="col-md-3">
-                <a href="#" className="btn btn-secondary">
+              <div className="col-md-8 mr-4">Menampilkan : List Wawancara</div>
+              <div className="col-md-3 ml-5">
+                <a href="#" className="btn bg-custom-11">
                   Tampilkan Semua Kandidat
                 </a>
               </div>
@@ -85,7 +117,10 @@ export default function TampilKandidatPage() {
                       >
                         Atur Wawancara
                       </button>
-                      <a href="#" className="btn btn-warning btn-block">
+                      <a
+                        href="#"
+                        className="btn bg-custom-4 btn-block text-white"
+                      >
                         Pilih Kandidat
                       </a>
                     </div>
@@ -118,7 +153,10 @@ export default function TampilKandidatPage() {
                       >
                         Atur Wawancara
                       </button>
-                      <a href="#" className="btn btn-warning btn-block">
+                      <a
+                        href="#"
+                        className="btn bg-custom-4 btn-block text-white"
+                      >
                         Pilih Kandidat
                       </a>
                     </div>
@@ -151,7 +189,10 @@ export default function TampilKandidatPage() {
                       >
                         Atur Wawancara
                       </button>
-                      <a href="#" className="btn btn-warning btn-block">
+                      <a
+                        href="#"
+                        className="btn bg-custom-4 btn-block text-white"
+                      >
                         Pilih Kandidat
                       </a>
                     </div>
@@ -184,7 +225,10 @@ export default function TampilKandidatPage() {
                       >
                         Atur Wawancara
                       </button>
-                      <a href="#" className="btn btn-warning btn-block">
+                      <a
+                        href="#"
+                        className="btn bg-custom-4 btn-block text-white"
+                      >
                         Pilih Kandidat
                       </a>
                     </div>
@@ -258,13 +302,14 @@ export default function TampilKandidatPage() {
                     placeholder="Link Video Conference"
                   />
                 </div>
-                <div class="form-group">
-                  <label for="lokasiWawancara">Lokasi Wawancara</label>
+                <div className="form-group">
+                  <label htmlFor="lokasiWawancara">Lokasi Wawancara</label>
                   <textarea
-                    class="form-control"
+                    className="form-control"
                     id="lokasiWawancara"
-                    rows="4"
-                  ></textarea>
+                    rows={4}
+                    defaultValue={""}
+                  />
                 </div>
                 <div class="form-group">
                   <label for="pesan">Pesan</label>
