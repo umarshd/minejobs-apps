@@ -21,7 +21,9 @@ export default function BahasaPage() {
                   <div className="row justify-content-center">
                     <div className="col-md-12 col-lg-3">
                       <div className="form-group">
-                        <label htmlFor="bahasa">Bahasa</label>
+                        <label htmlFor="bahasa">
+                          <span className="font-weight-bold">Bahasa</span>
+                        </label>
                         <input
                           type="text"
                           className="form-control"
@@ -33,7 +35,9 @@ export default function BahasaPage() {
                     <div className="col-md-12 col-lg-3">
                       <div className="form-group">
                         <label htmlFor="kemampuanVerbal">
-                          Kemampuan Verbal
+                          <span className="font-weight-bold">
+                            Kemampuan Verbal
+                          </span>
                         </label>
                         <select className="custom-select" id="kemampuanVerbal">
                           <option selected>Select item...</option>
@@ -53,7 +57,9 @@ export default function BahasaPage() {
                     <div className="col-md-12 col-lg-3">
                       <div className="form-group">
                         <label htmlFor="kemampuanTulisan">
-                          Kemampuan Tulisan
+                          <span className="font-weight-bold">
+                            Kemampuan Tulisan
+                          </span>
                         </label>
                         <select className="custom-select" id="kemampuanTulisan">
                           <option selected>Select item...</option>
