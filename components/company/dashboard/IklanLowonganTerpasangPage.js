@@ -16,9 +16,9 @@ export default function IklanLowonganTerpasangPage() {
         <div className="bg-custom-secondary pb-4 mb-3 pt-4">
           <div className="container-custom">
             <div className="row">
-              <div className="col-md-9">Iklan Dibuat</div>
-              <div className="col-md-3">
-                <a href="#" className="btn btn-secondary">
+              <div className="col-md-8 mr-3">Iklan Dibuat</div>
+              <div className="col-md-3 ml-5">
+                <a href="#" className="btn bg-custom-11 btn-block mr-2">
                   Buat Iklan Baru
                 </a>
               </div>
@@ -46,7 +46,7 @@ export default function IklanLowonganTerpasangPage() {
                   <a href="#" className="btn btn-success btn-block">
                     Lihat Kandidat
                   </a>
-                  <a href="#" className="btn btn-warning btn-block">
+                  <a href="#" className="btn bg-custom-4 btn-block text-white">
                     Tayangkan Kembali
                   </a>
                 </div>
@@ -72,7 +72,7 @@ export default function IklanLowonganTerpasangPage() {
                   <a href="#" className="btn btn-success btn-block">
                     Lihat Kandidat
                   </a>
-                  <a href="#" className="btn btn-warning btn-block">
+                  <a href="#" className="btn bg-custom-4 btn-block text-whitek">
                     Tayangkan Kembali
                   </a>
                 </div>
@@ -83,6 +83,7 @@ export default function IklanLowonganTerpasangPage() {
                 <div className="col-md-9">
                   <div className="posisi font-weight-bold">
                     Fullstack Web Developer
+                    <small className="text-danger ml-1">(Berakhir)</small>
                   </div>
                   <div className="masaTayang">
                     Masa Tayang Berakhir 2 April 2020
@@ -98,7 +99,7 @@ export default function IklanLowonganTerpasangPage() {
                   <a href="#" className="btn btn-success btn-block">
                     Lihat Kandidat
                   </a>
-                  <a href="#" className="btn btn-warning btn-block">
+                  <a href="#" className="btn bg-custom-4 btn-block text-white">
                     Tayangkan Kembali
                   </a>
                 </div>
@@ -109,6 +110,7 @@ export default function IklanLowonganTerpasangPage() {
                 <div className="col-md-9">
                   <div className="posisi font-weight-bold">
                     Fullstack Web Developer
+                    <small className="text-danger ml-1">(Berakhir)</small>
                   </div>
                   <div className="masaTayang">
                     Masa Tayang Berakhir 2 April 2020
@@ -124,7 +126,7 @@ export default function IklanLowonganTerpasangPage() {
                   <a href="#" className="btn btn-success btn-block">
                     Lihat Kandidat
                   </a>
-                  <a href="#" className="btn btn-warning btn-block">
+                  <a href="#" className="btn bg-custom-4 btn-block text-white">
                     Tayangkan Kembali
                   </a>
                 </div>
