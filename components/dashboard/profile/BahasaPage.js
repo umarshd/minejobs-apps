@@ -22,15 +22,12 @@ export default function BahasaPage() {
                     <div className="col-md-12 col-lg-3">
                       <div className="form-group">
                         <label htmlFor="bahasa">Bahasa</label>
-                        <select
-                          className="custom-select"
-                          id="pendidikanTerakhir"
-                        >
-                          <option selected>Select item...</option>
-                          <option value={1}>One</option>
-                          <option value={2}>Two</option>
-                          <option value={3}>Three</option>
-                        </select>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="bahasa"
+                          placeholder="Input text"
+                        />
                       </div>
                     </div>
                     <div className="col-md-12 col-lg-3">
@@ -40,9 +37,16 @@ export default function BahasaPage() {
                         </label>
                         <select className="custom-select" id="kemampuanVerbal">
                           <option selected>Select item...</option>
-                          <option value={1}>One</option>
-                          <option value={2}>Two</option>
-                          <option value={3}>Three</option>
+                          <option value={1}>1</option>
+                          <option value={2}>2</option>
+                          <option value={3}>3</option>
+                          <option value={4}>4</option>
+                          <option value={5}>5</option>
+                          <option value={6}>6</option>
+                          <option value={7}>7</option>
+                          <option value={8}>8</option>
+                          <option value={9}>9</option>
+                          <option value={10}>10</option>
                         </select>
                       </div>
                     </div>
@@ -53,9 +57,16 @@ export default function BahasaPage() {
                         </label>
                         <select className="custom-select" id="kemampuanTulisan">
                           <option selected>Select item...</option>
-                          <option value={1}>One</option>
-                          <option value={2}>Two</option>
-                          <option value={3}>Three</option>
+                          <option value={1}>1</option>
+                          <option value={2}>2</option>
+                          <option value={3}>3</option>
+                          <option value={4}>4</option>
+                          <option value={5}>5</option>
+                          <option value={6}>6</option>
+                          <option value={7}>7</option>
+                          <option value={8}>8</option>
+                          <option value={9}>9</option>
+                          <option value={10}>10</option>
                         </select>
                       </div>
                     </div>
