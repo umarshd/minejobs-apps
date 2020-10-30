@@ -26,9 +26,11 @@ export default function PendidikanPage() {
                     </label>
                     <select className="custom-select" id="pendidikanTerakhir">
                       <option selected>Pilih Tingkat Pendidikan</option>
-                      <option value={1}>One</option>
-                      <option value={2}>Two</option>
-                      <option value={3}>Three</option>
+                      <option value="SMA/MA">SMA / MA</option>
+                      <option value="Diploma D3">Diploma D3</option>
+                      <option value="Sarjana S1">Sarjana S1</option>
+                      <option value="Magister S2">Magister S2</option>
+                      <option value="Doktor S3">Doktor S3</option>
                     </select>
                   </div>
                   <div className="form-group">
