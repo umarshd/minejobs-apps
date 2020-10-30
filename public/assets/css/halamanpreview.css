@@ -1,0 +1,10 @@
+main .foto-company-bingkai {
+  position: relative;
+  padding: 12px;
+}
+
+main .foto-company-bingkai .foto-company {
+  position: absolute;
+  margin-top: -80px;
+}
+/*# sourceMappingURL=halamanpreview.css.map */
