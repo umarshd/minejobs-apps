@@ -23,10 +23,12 @@ export default function HeaderCompanyPage() {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav ml-auto">
                 <a
-                  className="nav-item nav-link btn btn-warning text-white"
+                  className="nav-item nav-link btn btn-warning text-white pl-3 pr-3 pt-2 pb-2"
                   href="#"
+                  data-toggle="modal"
+                  data-target="#loginModal"
                 >
-                  Dashboard Perusahaan
+                  DASHBOARD PERUSAHAAN
                 </a>
               </div>
             </div>
@@ -96,7 +98,7 @@ export default function HeaderCompanyPage() {
             <div className="row justify-content-center">
               <div className="col-md-8">
                 <div className="card p-5">
-                  <h3 className="text-center mb-4">
+                  <h3 className="text-center mb-4 ">
                     Daftar dan Dapatkan <br />
                     Satu Iklan Gratis
                   </h3>
