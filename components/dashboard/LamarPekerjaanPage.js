@@ -181,29 +181,43 @@ export default function LamarPekerjaanPage() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-12 mt-3 mb-5">
-                <div className="row">
-                  <div className="offset-md-3 col-md-5">
-                    <div className="my-name">Budi Gunawan</div>
-                    <div className="jurusan">Sarjana S1 Teknik Informatika</div>
-                    <div className="school">Universitas Dian Nuswantoro</div>
-                  </div>
-                  <div className="col-md-3">
-                    <a
-                      href="/editprofile"
-                      className="btn btn-secondary btn-block"
-                    >
-                      Lihat Profile
-                    </a>
-                    <a
-                      href="/editprofile"
-                      className="btn btn-secondary btn-block"
-                    >
-                      Edit Profile
-                    </a>
-                    <a href="#" className="btn btn-primary btn-block">
-                      Kirim Lamaran
-                    </a>
+              <div className="col-md-12 mb-5">
+                <div className="card p-4">
+                  <div className="row">
+                    <div className="col-md-3">
+                      <img
+                        src="/bg-home.jpg"
+                        className="rounded-circle ml-3 mr-3"
+                        height="96"
+                        width="96"
+                      />
+                    </div>
+                    <div className="col-md-5">
+                      <div className="my-name font-weight-bold">
+                        Budi Gunawan
+                      </div>
+                      <div className="jurusan">
+                        Sarjana S1 Teknik Informatika
+                      </div>
+                      <div className="school">Universitas Dian Nuswantoro</div>
+                    </div>
+                    <div className="col-md-3">
+                      <a
+                        href="/editprofile"
+                        className="btn bg-custom-10 btn-block"
+                      >
+                        Lihat Profile
+                      </a>
+                      <a
+                        href="/editprofile"
+                        className="btn bg-custom-10 btn-block"
+                      >
+                        Edit Profile
+                      </a>
+                      <a href="#" className="btn btn-primary btn-block">
+                        Kirim Lamaran
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
