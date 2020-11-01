@@ -1,6 +1,64 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { UserContext } from "../../contexts/UserContext";
+import Cookies from "js-cookie";
+import axios from "axios";
 
 export default function HeaderHomePage() {
+  const [form, setForm] = useState(null);
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+
+    const API = `${process.env.NEXT_PUBLIC_ENDPOINT + "api/kandidat/register"}`;
+
+    axios({
+      url: API,
+      method: "POST",
+      data: {
+        email: form.emailSignup,
+        password: form.passwordSignup,
+        password_confirmation: form.passwordSignup,
+      },
+    })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    const API = `${process.env.NEXT_PUBLIC_ENDPOINT + "api/kandidat/register"}`;
+
+    axios({
+      url: API,
+      method: "POST",
+      data: {
+        email: form.emailLogin,
+        password: form.passwordLogin,
+        password_confirmation: form.passwordLogin,
+      },
+    })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  console.log(form);
+
   return (
     <>
       <header>
@@ -71,7 +129,7 @@ export default function HeaderHomePage() {
                   <br />
                   Daftar Dengan Email
                 </p>
-                <form action className="signupForm">
+                <form onSubmit={handleRegister} className="signupForm">
                   <div className="row">
                     <div className="col-md-6">
                       <div className="form-group">
@@ -81,6 +139,8 @@ export default function HeaderHomePage() {
                           id="firstName"
                           aria-describedby="firstName"
                           placeholder="Nama Depan"
+                          name="firstName"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -92,6 +152,8 @@ export default function HeaderHomePage() {
                           id="lastName"
                           aria-describedby="lastName"
                           placeholder="Nama Belakang"
+                          name="lastName"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -102,9 +164,11 @@ export default function HeaderHomePage() {
                         <input
                           type="email"
                           className="form-control"
-                          id="email"
+                          id="emailSignup"
                           aria-describedby="email"
                           placeholder="Email"
+                          name="emailSignup"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -115,9 +179,11 @@ export default function HeaderHomePage() {
                         <input
                           type="password"
                           className="form-control"
-                          id="password"
+                          id="passwordSignup"
                           aria-describedby="password"
                           placeholder="Kata Sandi"
+                          name="passwordSignup"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -129,7 +195,9 @@ export default function HeaderHomePage() {
                           className="form-check-input"
                           type="checkbox"
                           id="inlineCheckbox1"
-                          defaultValue="option1"
+                          defaultValue="setuju"
+                          name="signupCheck"
+                          onChange={handleChange}
                         />
                         <label
                           className="form-check-label mt-4 ml-1"
@@ -141,7 +209,7 @@ export default function HeaderHomePage() {
                       </div>
                     </div>
                   </div>
-                  <button type="submit" className="btn btn-primary mt-4 mb-4">
+                  <button className="btn btn-primary mt-4 mb-4">
                     Daftar Sekarang
                   </button>
                 </form>
@@ -172,16 +240,18 @@ export default function HeaderHomePage() {
                   <br />
                   Masuk Dengan Email
                 </p>
-                <form action className="loginForm">
+                <form onSubmit={handleLogin} className="loginForm">
                   <div className="row">
                     <div className="col-md-12">
                       <div className="form-group">
                         <input
                           type="email"
                           className="form-control"
-                          id="email"
+                          id="emailLogin"
                           aria-describedby="email"
                           placeholder="Email"
+                          name="emailLogin"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -192,16 +262,16 @@ export default function HeaderHomePage() {
                         <input
                           type="password"
                           className="form-control"
-                          id="password"
+                          id="passwordLogin"
                           aria-describedby="password"
                           placeholder="Kata Sandi"
+                          name="passwordLogin"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
                   </div>
-                  <button type="submit" className="btn btn-primary mt-4 mb-4">
-                    Masuk
-                  </button>
+                  <button className="btn btn-primary mt-4 mb-4">Masuk</button>
                 </form>
               </div>
             </div>
