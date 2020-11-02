@@ -209,7 +209,7 @@ export default function LamarPekerjaanPage() {
                         Lihat Profile
                       </a>
                       <a
-                        href="/editprofile"
+                        href="/datadiri"
                         className="btn bg-custom-10 btn-block"
                       >
                         Edit Profile
