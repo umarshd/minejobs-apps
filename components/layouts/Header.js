@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useRouter } from "next/router";
+import { UserContext } from "../../contexts/UserContext";
 
 export default function Header() {
+  const router = useRouter();
+  const { token, uid, handleLogout } = useContext(UserContext);
+
   return (
     <>
       <header className="mb-5">
@@ -52,14 +57,14 @@ export default function Header() {
                   Budi
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">
+                  {/* <a class="dropdown-item" href="#">
                     Action
                   </a>
                   <a class="dropdown-item" href="#">
-                    Another action
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    Something else here
+                    Profile
+                  </a> */}
+                  <a class="dropdown-item" onClick={handleLogout}>
+                    Logout
                   </a>
                 </div>
               </div>

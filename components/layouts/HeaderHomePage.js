@@ -1,10 +1,17 @@
 import React, { useContext, useState } from "react";
+import { useRouter } from "next/router";
 import { UserContext } from "../../contexts/UserContext";
 import Cookies from "js-cookie";
 import axios from "axios";
 
 export default function HeaderHomePage() {
+  const router = useRouter();
   const [form, setForm] = useState(null);
+
+  const { token, uid } = useContext(UserContext);
+
+  console.log(token);
+  console.log(uid);
 
   const handleChange = (e) => {
     setForm({
@@ -29,6 +36,10 @@ export default function HeaderHomePage() {
     })
       .then((res) => {
         console.log(res);
+        const userId = res.data.user;
+        Cookies.set("token", res.data.token);
+        Cookies.set("uid", userId.id);
+        window.location.href = "/profile/profilesetup";
       })
       .catch((err) => {
         console.log(err);
@@ -38,7 +49,7 @@ export default function HeaderHomePage() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    const API = `${process.env.NEXT_PUBLIC_ENDPOINT + "api/kandidat/register"}`;
+    const API = `${process.env.NEXT_PUBLIC_ENDPOINT + "api/kandidat/login"}`;
 
     axios({
       url: API,
@@ -50,7 +61,10 @@ export default function HeaderHomePage() {
       },
     })
       .then((res) => {
-        console.log(res);
+        const userId = res.data.user;
+        Cookies.set("token", res.data.token);
+        Cookies.set("uid", userId.id);
+        window.location.href = "/editprofile";
       })
       .catch((err) => {
         console.log(err);

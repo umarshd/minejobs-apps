@@ -7,7 +7,7 @@ export default function User({ children }) {
   const token = Cookies.get("token");
   const uid = Cookies.get("uid");
 
-  const [user, setUser] = useState(false);
+  // const [user, setUser] = useState(false);
 
   const handleLogout = (e) => {
     Cookies.remove("token");
@@ -15,7 +15,7 @@ export default function User({ children }) {
   };
 
   return (
-    <UserContext.Provider value={{ user, setUser, token, uid, handleLogout }}>
+    <UserContext.Provider value={{ token, uid, handleLogout }}>
       {children}
     </UserContext.Provider>
   );
