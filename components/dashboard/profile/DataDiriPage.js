@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function DataDiriPage({ form, handleChange, handleSubmit }) {
+export default function DataDiriPage({ data, handleChange, handleSubmit }) {
   return (
     <>
       <div className="col-md-7 col-lg-9">
@@ -29,6 +29,7 @@ export default function DataDiriPage({ form, handleChange, handleSubmit }) {
                           aria-describedby="firstName"
                           placeholder="Nama Depan"
                           name="nama_depan"
+                          defaultValue={data.map((item) => item.nama_depan)}
                           onChange={handleChange}
                         />
                       </div>
@@ -43,6 +44,7 @@ export default function DataDiriPage({ form, handleChange, handleSubmit }) {
                           aria-describedby="lastName"
                           placeholder="Nama Belakang"
                           name="nama_belakang"
+                          defaultValue={data.map((item) => item.nama_belakang)}
                           onChange={handleChange}
                         />
                       </div>
@@ -59,6 +61,7 @@ export default function DataDiriPage({ form, handleChange, handleSubmit }) {
                           aria-describedby="phoneNumber"
                           placeholder="Nomer Telepon"
                           name="nomor_telepon"
+                          defaultValue={data.map((item) => item.nomor_telepon)}
                           onChange={handleChange}
                         />
                       </div>
@@ -75,6 +78,7 @@ export default function DataDiriPage({ form, handleChange, handleSubmit }) {
                           aria-describedby="email"
                           placeholder="Email"
                           name="email"
+                          defaultValue={data.map((item) => item.email)}
                           onChange={handleChange}
                         />
                       </div>
@@ -137,6 +141,7 @@ export default function DataDiriPage({ form, handleChange, handleSubmit }) {
                           rows={3}
                           name="tentang"
                           onChange={handleChange}
+                          defaultValue={data.map((item) => item.tentang)}
                         />
                       </div>
                     </div>

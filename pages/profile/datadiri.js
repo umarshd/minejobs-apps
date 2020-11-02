@@ -9,6 +9,25 @@ import { UserContext } from "../../contexts/UserContext";
 export default function datadiri() {
   const { token, uid } = useContext(UserContext);
   const [form, setForm] = useState(null);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const API = `${process.env.NEXT_PUBLIC_ENDPOINT + "api/data-pribadi/1"}`;
+
+    axios({
+      url: API,
+      method: "GET",
+      headers: {
+        authorization: `Bearer ${token}`,
+      },
+    })
+      .then((res) => {
+        setData(res.data.data.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   const handleChange = (e) => {
     setForm({
@@ -48,6 +67,7 @@ export default function datadiri() {
   };
 
   console.log(form);
+  console.log(data);
 
   return (
     <>
@@ -60,6 +80,7 @@ export default function datadiri() {
           <div className="row">
             <Sidebar active={"active"} />
             <DataDiriPage
+              data={data}
               form={form}
               handleChange={handleChange}
               handleSubmit={handleSubmit}
