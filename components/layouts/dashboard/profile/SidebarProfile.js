@@ -20,7 +20,7 @@ export default function SidebarProfile() {
                 srcSet
               />
               <h5>{user.map((item) => item.nama_depan)}</h5>
-              <a href>Lihat Profile</a>
+              <a href="/editprofile">Lihat Profile</a>
               <hr />
             </div>
             <div className="link-card-left-bahasa">
