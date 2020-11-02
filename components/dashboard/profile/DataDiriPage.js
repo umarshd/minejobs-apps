@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function DataDiriPage() {
+export default function DataDiriPage({ form, handleChange, handleSubmit }) {
   return (
     <>
       <div className="col-md-7 col-lg-9">
@@ -17,7 +17,7 @@ export default function DataDiriPage() {
             <hr />
             <div className="row justify-content-center">
               <div className="col-md-8">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="col-md-12 col-lg-6">
                       <div className="form-group">
@@ -28,6 +28,8 @@ export default function DataDiriPage() {
                           id="firstName"
                           aria-describedby="firstName"
                           placeholder="Nama Depan"
+                          name="nama_depan"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -40,6 +42,8 @@ export default function DataDiriPage() {
                           id="lastName"
                           aria-describedby="lastName"
                           placeholder="Nama Belakang"
+                          name="nama_belakang"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -54,6 +58,8 @@ export default function DataDiriPage() {
                           id="phoneNumber"
                           aria-describedby="phoneNumber"
                           placeholder="Nomer Telepon"
+                          name="nomor_telepon"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -68,6 +74,8 @@ export default function DataDiriPage() {
                           id="email"
                           aria-describedby="email"
                           placeholder="Email"
+                          name="email"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -80,19 +88,24 @@ export default function DataDiriPage() {
                   </div>
                   <div className="row">
                     <div className="col-md-12 col-lg-6">
-                      <select className="custom-select" id="provisi">
-                        <option selected>Provinsi</option>
-                        <option value={1}>One</option>
-                        <option value={2}>Two</option>
-                        <option value={3}>Three</option>
+                      <select
+                        className="custom-select"
+                        id="provisi"
+                        name="provinsi"
+                        onChange={handleChange}
+                      >
+                        <option>Provinsi</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Bandung">Bandung</option>
+                        <option value="">Three</option>
                       </select>
                     </div>
                     <div className="col-md-12 col-lg-6">
-                      <select className="custom-select" id="kota">
-                        <option selected>Kota</option>
-                        <option value={1}>One</option>
-                        <option value={2}>Two</option>
-                        <option value={3}>Three</option>
+                      <select className="custom-select" id="kota" name="kota">
+                        <option>Kota</option>
+                        <option value="Jakarta Selatan">Jakarta Selatan</option>
+                        <option value="Jakarta Barat">Jakarta Barat</option>
+                        <option value="Jakarta Timur">Jakarta Timur</option>
                       </select>
                     </div>
                   </div>
@@ -107,6 +120,8 @@ export default function DataDiriPage() {
                             id="foto"
                             aria-describedby="foto"
                             placeholder="Pilih Berkas"
+                            name="foto_profile"
+                            onChange={handleChange}
                           />
                         </div>
                       </div>
@@ -120,17 +135,15 @@ export default function DataDiriPage() {
                           className="form-control"
                           id="tentang"
                           rows={3}
-                          defaultValue={""}
+                          name="tentang"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
                   </div>
                   <div className="row">
                     <div className="col text-center">
-                      <button
-                        type="submit"
-                        className="btn btn-primary mb-3 mt-3"
-                      >
+                      <button className="btn btn-primary mb-3 mt-3">
                         Simpan
                       </button>
                     </div>

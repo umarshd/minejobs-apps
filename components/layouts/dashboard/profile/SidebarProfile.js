@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+
 import Link from "next/link";
+import { UserContext } from "../../../../contexts/UserContext";
 
 export default function SidebarProfile() {
+  const { user } = useContext(UserContext);
   return (
     <>
       <div className="col-md-5 col-lg-3">
@@ -16,7 +19,7 @@ export default function SidebarProfile() {
                 alt=""
                 srcSet
               />
-              <h5>Budi</h5>
+              <h5>{user.map((item) => item.nama_depan)}</h5>
               <a href>Lihat Profile</a>
               <hr />
             </div>

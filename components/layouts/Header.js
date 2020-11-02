@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useRouter } from "next/router";
 import { UserContext } from "../../contexts/UserContext";
+import axios from "axios";
 
 export default function Header() {
   const router = useRouter();
-  const { token, uid, handleLogout } = useContext(UserContext);
+  const { user, handleLogout } = useContext(UserContext);
 
   return (
     <>
@@ -54,7 +55,7 @@ export default function Header() {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Budi
+                  {user.map((item) => item.nama_depan)}
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   {/* <a class="dropdown-item" href="#">
@@ -63,7 +64,7 @@ export default function Header() {
                   <a class="dropdown-item" href="#">
                     Profile
                   </a> */}
-                  <a class="dropdown-item" onClick={handleLogout}>
+                  <a class="dropdown-item" href="#" onClick={handleLogout}>
                     Logout
                   </a>
                 </div>

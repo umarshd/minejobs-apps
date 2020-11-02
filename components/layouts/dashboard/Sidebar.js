@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Link from "next/link";
 
+import { UserContext } from "../../../contexts/UserContext";
+
 export default function Sidebar() {
+  const { user } = useContext(UserContext);
   return (
     <>
       <div className="col-md-5 col-lg-3 sidebar">

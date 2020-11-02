@@ -37,8 +37,8 @@ export default function HeaderHomePage() {
       .then((res) => {
         console.log(res);
         const userId = res.data.user;
-        Cookies.set("token", res.data.token);
-        Cookies.set("uid", userId.id);
+        Cookies.set("token", res.data.token, { expires: 7 });
+        Cookies.set("uid", userId.id, { expires: 7 });
         window.location.href = "/profile/profilesetup";
       })
       .catch((err) => {
@@ -62,8 +62,8 @@ export default function HeaderHomePage() {
     })
       .then((res) => {
         const userId = res.data.user;
-        Cookies.set("token", res.data.token);
-        Cookies.set("uid", userId.id);
+        Cookies.set("token", res.data.token, { expires: 7 });
+        Cookies.set("uid", userId.id, { expires: 7 });
         window.location.href = "/editprofile";
       })
       .catch((err) => {
