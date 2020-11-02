@@ -55,7 +55,7 @@ export default function EditProfilePage() {
                     </p>
                   </div>
                   <div className="col-md-2 offset-md-4">
-                    <a href="#" className="btn btn-secondary">
+                    <a href="/profile/datadiri" className="btn btn-secondary">
                       Edit Profile
                     </a>
                   </div>
