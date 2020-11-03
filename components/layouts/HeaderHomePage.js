@@ -113,7 +113,7 @@ export default function HeaderHomePage() {
                 </a>
                 <a
                   className="nav-item nav-link btn btn-warning text-white"
-                  href="#"
+                  href="/company"
                 >
                   PERUSAHAAN
                 </a>
