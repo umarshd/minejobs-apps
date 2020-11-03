@@ -114,12 +114,14 @@ export default function SemuaKandidatPage() {
                         >
                           Lihat Profile
                         </a>
-                        <a
-                          href="#"
-                          className="btn btn-success btn-block text-white"
+                        <button
+                          type="button"
+                          className="btn btn-success btn-block"
+                          data-toggle="modal"
+                          data-target=".bd-example-modal-lg"
                         >
                           Atur Wawancara
-                        </a>
+                        </button>
                         <a
                           href="#"
                           className="btn bg-custom-4 btn-block text-white"
@@ -153,45 +155,14 @@ export default function SemuaKandidatPage() {
                         >
                           Lihat Profile
                         </a>
-                        <a
-                          href="#"
-                          className="btn btn-success btn-block text-white"
+                        <button
+                          type="button"
+                          className="btn btn-success btn-block"
+                          data-toggle="modal"
+                          data-target=".bd-example-modal-lg"
                         >
                           Atur Wawancara
-                        </a>
-                        <a
-                          href="#"
-                          className="btn bg-custom-4 btn-block text-white"
-                        >
-                          Pilih Kandidat
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-12">
-                <div className="card pt-3 pb-3">
-                  <div className="container-custom">
-                    <div className="row">
-                      <div className="col-md-9">
-                        <div className="nama-kandidat font-weight-bold">
-                          Agus Hartanto
-                        </div>
-                        <div className="pendidikan-kandidat">
-                          Pendidikan Terakhir: Sarjana (S1), Teknik Informatika
-                        </div>
-                        <div className="gaji-kandidat">
-                          Gaji yang di inginkan : Rp.3.000.000
-                        </div>
-                      </div>
-                      <div className="col-md-3">
-                        <a href="#" className="btn btn-primary btn-block">
-                          Lihat Profile
-                        </a>
-                        <a href="#" className="btn btn-success btn-block">
-                          Atur Wawancara
-                        </a>
+                        </button>
                         <a
                           href="#"
                           className="btn bg-custom-4 btn-block text-white"
@@ -222,9 +193,52 @@ export default function SemuaKandidatPage() {
                         <a href="#" className="btn btn-primary btn-block">
                           Lihat Profile
                         </a>
-                        <a href="#" className="btn btn-success btn-block">
+                        <button
+                          type="button"
+                          className="btn btn-success btn-block"
+                          data-toggle="modal"
+                          data-target=".bd-example-modal-lg"
+                        >
                           Atur Wawancara
+                        </button>
+                        <a
+                          href="#"
+                          className="btn bg-custom-4 btn-block text-white"
+                        >
+                          Pilih Kandidat
                         </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-12">
+                <div className="card pt-3 pb-3">
+                  <div className="container-custom">
+                    <div className="row">
+                      <div className="col-md-9">
+                        <div className="nama-kandidat font-weight-bold">
+                          Agus Hartanto
+                        </div>
+                        <div className="pendidikan-kandidat">
+                          Pendidikan Terakhir: Sarjana (S1), Teknik Informatika
+                        </div>
+                        <div className="gaji-kandidat">
+                          Gaji yang di inginkan : Rp.3.000.000
+                        </div>
+                      </div>
+                      <div className="col-md-3">
+                        <a href="#" className="btn btn-primary btn-block">
+                          Lihat Profile
+                        </a>
+                        <button
+                          type="button"
+                          className="btn btn-success btn-block"
+                          data-toggle="modal"
+                          data-target=".bd-example-modal-lg"
+                        >
+                          Atur Wawancara
+                        </button>
                         <a
                           href="#"
                           className="btn bg-custom-4 btn-block text-white"
