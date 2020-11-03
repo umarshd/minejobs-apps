@@ -6,7 +6,7 @@ export default function HeaderCompanyPage() {
       <header>
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <div className="container">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               {/* Mine<span>jobs</span> */}
               <img src="/Logo.png" className="img-fluid" />
             </a>
