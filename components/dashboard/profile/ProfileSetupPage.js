@@ -11,7 +11,7 @@ export default function ProfileSetupPage() {
         </div>
         <div className="card card-right-profile-setup">
           <Link href="/profile/datadiri" className="p-4">
-            <a className="pt-4 pb-4 pl-0 pr-0 ">Buat Profile Sekarang</a>
+            <a className="pt-4 pb-4 ">Buat Profile Sekarang</a>
           </Link>
         </div>
       </div>
