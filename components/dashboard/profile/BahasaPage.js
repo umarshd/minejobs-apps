@@ -28,7 +28,7 @@ export default function BahasaPage() {
                           type="text"
                           className="form-control"
                           id="bahasa"
-                          placeholder="Bhasa ..."
+                          placeholder="Bahasa ..."
                         />
                       </div>
                     </div>
