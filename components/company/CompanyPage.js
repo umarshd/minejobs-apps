@@ -91,6 +91,7 @@ export default function CompanyPage() {
               <img
                 className="card-img-top pt-5 pb-5 bg-custom-secondary"
                 height="128"
+                width="128"
                 src="/assets/icon/6.png"
                 alt="Card image cap"
               />
