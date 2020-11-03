@@ -89,7 +89,7 @@ export default function CompanyPage() {
           <div className="col-md-4">
             <div className="card">
               <img
-                className="card-img-top pt-5 pb-5 bg-custom-secondary"
+                className="card-img-top pt-5 pb-5 bg-custom-secondary pl-120 pr-120"
                 height="128"
                 width="128"
                 src="/assets/icon/6.png"
@@ -97,6 +97,7 @@ export default function CompanyPage() {
               />
               <div className="card-body p-3 pl-5 pr-5 pb-5">
                 <h6 className="font-weight-bold">Mudah , Cepat, dan Praktis</h6>
+                <br />
               </div>
             </div>
           </div>
