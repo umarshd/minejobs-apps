@@ -60,7 +60,10 @@ export default function HalamanPreviewPage() {
         <a href="#" className="btn bg-custom-10 btn-block">
           Edit Iklan
         </a>
-        <a href="#" className="btn btn-primary btn-block mt-md-3">
+        <a
+          href="/company/dashboard/iklanlowonganterpasang"
+          className="btn btn-primary btn-block mt-md-3"
+        >
           Tayang Iklan
         </a>
       </div>
