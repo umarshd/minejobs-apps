@@ -28,7 +28,7 @@ export default function BahasaPage() {
                           type="text"
                           className="form-control"
                           id="bahasa"
-                          placeholder="Input text"
+                          placeholder="Bhasa ..."
                         />
                       </div>
                     </div>
@@ -40,8 +40,9 @@ export default function BahasaPage() {
                           </span>
                         </label>
                         <select className="custom-select" id="kemampuanVerbal">
-                          <option selected>Select item...</option>
-                          <option value={1}>1</option>
+                          <option value={1} selected>
+                            1
+                          </option>
                           <option value={2}>2</option>
                           <option value={3}>3</option>
                           <option value={4}>4</option>
@@ -62,8 +63,9 @@ export default function BahasaPage() {
                           </span>
                         </label>
                         <select className="custom-select" id="kemampuanTulisan">
-                          <option selected>Select item...</option>
-                          <option value={1}>1</option>
+                          <option value={1} selected>
+                            1
+                          </option>
                           <option value={2}>2</option>
                           <option value={3}>3</option>
                           <option value={4}>4</option>
