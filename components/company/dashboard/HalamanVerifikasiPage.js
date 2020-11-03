@@ -154,7 +154,7 @@ export default function HalamanVerifikasiPage() {
                       <div class="form-group">
                         <label for="lokasiWawancara">
                           <span className="font-weight-bold">
-                            Lokasi Wawancara
+                            Tentang Perusahaan
                           </span>
                         </label>
                         <textarea
