@@ -7,7 +7,8 @@ export default function HeaderCompanyPage() {
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <div className="container">
             <a className="navbar-brand" href="#">
-              Mine<span>jobs</span>
+              {/* Mine<span>jobs</span> */}
+              <img src="/logo.png" className="img-fluid" />
             </a>
             <button
               className="navbar-toggler"
