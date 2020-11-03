@@ -59,7 +59,7 @@ export default function CompanyPage() {
           <div className="col-md-4">
             <div className="card">
               <img
-                className="card-img-top pt-5 pb-5 bg-custom-secondary"
+                className="card-img-top pt-5 pb-5 bg-custom-secondary pl-120 pr-120"
                 height="128"
                 src="/assets/icon/hangouts-meet.svg"
                 alt="Card image cap"
@@ -74,7 +74,7 @@ export default function CompanyPage() {
           <div className="col-md-4">
             <div className="card">
               <img
-                className="card-img-top pt-5 pb-5 bg-custom-secondary"
+                className="card-img-top pt-5 pb-5 bg-custom-secondary pl-120 pr-120"
                 height="128"
                 src="/assets/icon/5.png"
                 alt="Card image cap"
