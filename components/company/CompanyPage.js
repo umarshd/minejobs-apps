@@ -20,7 +20,7 @@ export default function CompanyPage() {
             </div>
             <div className="row justify-content-center content-company-promo ">
               <div className="col-md-6">
-                <img src="/bg-home.jpg" className="img-fluid" />
+                <img src="/2.png" className="img-fluid" />
               </div>
               <div className="col-md-6">
                 <h4 className="font-weight-bold">
@@ -45,7 +45,7 @@ export default function CompanyPage() {
                 </p>
               </div>
               <div className="col-md-6 mt-md-5">
-                <img src="/bg-home.jpg" className="img-fluid" />
+                <img src="/1.png" className="img-fluid" />
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function CompanyPage() {
               <img
                 className="card-img-top pt-5 pb-5 bg-custom-secondary"
                 height="128"
-                src="/assets/icon/hangouts-meet.svg"
+                src="/assets/icon/5.png"
                 alt="Card image cap"
               />
               <div className="card-body p-3 pl-5 pr-5 pb-5">
@@ -91,7 +91,7 @@ export default function CompanyPage() {
               <img
                 className="card-img-top pt-5 pb-5 bg-custom-secondary"
                 height="128"
-                src="/assets/icon/hangouts-meet.svg"
+                src="/assets/icon/6.png"
                 alt="Card image cap"
               />
               <div className="card-body p-3 pl-5 pr-5 pb-5">
