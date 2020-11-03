@@ -28,7 +28,7 @@ export default function KeahlianPage() {
                           type="text"
                           className="form-control"
                           id="keahlian"
-                          placeholder="Input text"
+                          placeholder="Keahlian ..."
                         />
                       </div>
                     </div>
