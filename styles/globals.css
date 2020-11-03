@@ -151,3 +151,11 @@ label span {
   border: 1px solid #0076de;
   color: #8a8a8a;
 }
+
+.pl-120 {
+  padding-left: 120px;
+}
+
+.pr-120 {
+  padding-right: 120px;
+}
