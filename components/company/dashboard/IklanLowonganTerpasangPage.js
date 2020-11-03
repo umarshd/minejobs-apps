@@ -18,7 +18,10 @@ export default function IklanLowonganTerpasangPage() {
             <div className="row">
               <div className="col-md-8 mr-3">Iklan Dibuat</div>
               <div className="col-md-3 ml-5">
-                <a href="#" className="btn bg-custom-11 btn-block mr-2">
+                <a
+                  href="/company/dashboard/buatiklan"
+                  className="btn bg-custom-11 btn-block mr-2"
+                >
                   Buat Iklan Baru
                 </a>
               </div>
@@ -43,7 +46,10 @@ export default function IklanLowonganTerpasangPage() {
                   <a href="#" className="btn btn-primary btn-block">
                     Lihat Iklan
                   </a>
-                  <a href="#" className="btn btn-success btn-block">
+                  <a
+                    href="/company/dashboard/tampilkandidat"
+                    className="btn btn-success btn-block"
+                  >
                     Lihat Kandidat
                   </a>
                   <a href="#" className="btn bg-custom-4 btn-block text-white">
@@ -69,7 +75,10 @@ export default function IklanLowonganTerpasangPage() {
                   <a href="#" className="btn btn-primary btn-block">
                     Lihat Iklan
                   </a>
-                  <a href="#" className="btn btn-success btn-block">
+                  <a
+                    href="/company/dashboard/tampilkandidat"
+                    className="btn btn-success btn-block"
+                  >
                     Lihat Kandidat
                   </a>
                   <a href="#" className="btn bg-custom-4 btn-block text-whitek">
@@ -96,7 +105,10 @@ export default function IklanLowonganTerpasangPage() {
                   <a href="#" className="btn btn-primary btn-block">
                     Lihat Iklan
                   </a>
-                  <a href="#" className="btn btn-success btn-block">
+                  <a
+                    href="/company/dashboard/tampilkandidat"
+                    className="btn btn-success btn-block"
+                  >
                     Lihat Kandidat
                   </a>
                   <a href="#" className="btn bg-custom-4 btn-block text-white">
@@ -123,7 +135,10 @@ export default function IklanLowonganTerpasangPage() {
                   <a href="#" className="btn btn-primary btn-block">
                     Lihat Iklan
                   </a>
-                  <a href="#" className="btn btn-success btn-block">
+                  <a
+                    href="/company/dashboard/tampilkandidat"
+                    className="btn btn-success btn-block"
+                  >
                     Lihat Kandidat
                   </a>
                   <a href="#" className="btn bg-custom-4 btn-block text-white">
