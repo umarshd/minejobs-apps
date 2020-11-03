@@ -58,12 +58,12 @@ export default function Header() {
                   {user.map((item) => item.nama_depan)}
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  {/* <a class="dropdown-item" href="#">
-                    Action
+                  <a class="dropdown-item" href="/company/dashboard/company">
+                    Company
                   </a>
-                  <a class="dropdown-item" href="#">
-                    Profile
-                  </a> */}
+                  <a class="dropdown-item" href="/company/admin/perusahaan">
+                    Admin
+                  </a>
                   <a class="dropdown-item" href="#" onClick={handleLogout}>
                     Logout
                   </a>
