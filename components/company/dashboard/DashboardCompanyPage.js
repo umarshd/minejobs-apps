@@ -34,10 +34,12 @@ export default function DashboardCompanyPage() {
                 </a>
               </div>
               <div className="col-md-3 ">
-                <div className="card bg-custom-secondary p-3 ">
-                  <img src="/assets/icon/hangouts-meet.svg" height="128" />
-                  <h6 className="mt-3">Cari Kandidat</h6>
-                </div>
+                <a href="/company/dashboard/iklanlowonganterpasang">
+                  <div className="card bg-custom-secondary p-3 ">
+                    <img src="/assets/icon/hangouts-meet.svg" height="128" />
+                    <h6 className="mt-3">Cari Kandidat</h6>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
