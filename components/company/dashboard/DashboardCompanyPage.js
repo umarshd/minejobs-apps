@@ -21,14 +21,14 @@ export default function DashboardCompanyPage() {
             <div className="row text-center">
               <div className="col-md-3 ">
                 <div className="card bg-custom-secondary p-3">
-                  <img src="/assets/icon/hangouts-meet.svg" height="128px" />
+                  <img src="/assets/icon/1.png" height="128px" />
                   <h6 className="mt-3 ">Beli/Tambah Kredit</h6>
                 </div>
               </div>
               <div className="col-md-3">
                 <a href="/company/dashboard/iklanlowonganterpasang">
                   <div className="card bg-custom-secondary p-3">
-                    <img src="/assets/icon/hangouts-meet.svg" height="128" />
+                    <img src="/assets/icon/2.png" height="128" />
                     <h6 className="mt-3">Pasang Iklan</h6>
                   </div>
                 </a>
@@ -36,7 +36,7 @@ export default function DashboardCompanyPage() {
               <div className="col-md-3 ">
                 <a href="/company/dashboard/iklanlowonganterpasang">
                   <div className="card bg-custom-secondary p-3 ">
-                    <img src="/assets/icon/hangouts-meet.svg" height="128" />
+                    <img src="/assets/icon/3.png" height="128" />
                     <h6 className="mt-3">Cari Kandidat</h6>
                   </div>
                 </a>
