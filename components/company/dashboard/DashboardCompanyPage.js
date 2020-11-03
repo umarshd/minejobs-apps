@@ -24,9 +24,9 @@ export default function DashboardCompanyPage() {
                   <img
                     src="/assets/icon/1.png"
                     height="128px"
-                    className="ml-auto mr-auto"
+                    className="ml-auto mr-auto mt-1 mb-1 pt-2 pb-2"
                   />
-                  <h6>Beli/Tambah Kredit</h6>
+                  <h6 className="mt-2">Beli/Tambah Kredit</h6>
                 </div>
               </div>
               <div className="col-md-3">
