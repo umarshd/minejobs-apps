@@ -36,7 +36,11 @@ export default function DashboardCompanyPage() {
               <div className="col-md-3 ">
                 <a href="/company/dashboard/iklanlowonganterpasang">
                   <div className="card bg-custom-secondary p-3 ">
-                    <img src="/assets/icon/3.png" height="128" />
+                    <img
+                      src="/assets/icon/3.png"
+                      height="128"
+                      className="ml-auto mr-auto"
+                    />
                     <h6 className="mt-3">Cari Kandidat</h6>
                   </div>
                 </a>
