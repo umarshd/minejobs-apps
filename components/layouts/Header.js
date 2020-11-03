@@ -12,8 +12,9 @@ export default function Header() {
       <header className="mb-5">
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <div className="container">
-            <a className="navbar-brand" href="#">
-              Mine<span>jobs</span>
+            <a className="navbar-brand" href="/">
+              {/* Mine<span>jobs</span> */}
+              <img src="/Logo.png" className="img-fluid" />
             </a>
             <button
               className="navbar-toggler"
