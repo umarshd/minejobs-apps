@@ -11,7 +11,9 @@ export default function User({ children }) {
   const [user, setUser] = useState([]);
 
   useEffect(() => {
-    const API = `${process.env.NEXT_PUBLIC_ENDPOINT + "/api/data-pribadi/1"}`;
+    const API = `${
+      process.env.NEXT_PUBLIC_ENDPOINT + "/api/data-pribadi/" + uid
+    }`;
 
     axios({
       url: API,

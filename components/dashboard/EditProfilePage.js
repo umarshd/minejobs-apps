@@ -1,11 +1,12 @@
 import React from "react";
 
-export default function EditProfilePage() {
+export default function EditProfilePage({ user }) {
   return (
     <>
       <div className="col-md-7 col-lg-9">
         <div className="alert alert-custom" role="alert">
-          Hai Budi, Silahkan cek email kamu untuk melakukan verifikasi akun
+          Hai {user.map((item) => item.nama_depan)}, Silahkan cek email kamu
+          untuk melakukan verifikasi akun
           <a href="#" className="ml-5">
             KIRIM ULANG EMAIL
           </a>
@@ -27,32 +28,32 @@ export default function EditProfilePage() {
                   </div>
                   <div className="col-md-10 pl-4 mt-auto mb-auto">
                     <div className="profile-detail ">
-                      <h5>Budi Gunawan</h5>
+                      <h5>
+                        {user.map((item) => item.nama_depan)}{" "}
+                        {user.map((item) => item.nama_belakang)}
+                      </h5>
                       <p>
-                        <i className="fas fa-map-marker-alt pr-2"></i>Jawa
-                        Tengah, Semarang
+                        <i className="fas fa-map-marker-alt pr-2"></i>
+                        {user.map((item) => item.provinsi)},{" "}
+                        {user.map((item) => item.kota)}
                       </p>
                       <p>
                         <i className="fas fa-envelope pr-2"></i>
                         budigunawan@gmail.com
                       </p>
                       <p>
-                        <i className="fas fa-id-card pr-2"></i>+62 8223400993
+                        <i className="fas fa-id-card pr-2"></i>
+                        {user.map((item) => item.nomor_telepon)}
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="about-me card p-3 mb-2 mt-2">
-                <h5>Tentang Budi</h5>
+                <h5>Tentang {user.map((item) => item.nama_depan)}</h5>
                 <div className="row">
                   <div className="col-md-6">
-                    <p>
-                      Ir. Budi Gunawan Sumadi adalah Menteri Perhubungan
-                      Republik Indonesia pada Kabinet Indonesia Maju setelah
-                      sebelumnya menjabat posisi yang sama pada Kabinet Kerja
-                      sejak 27 Juli 2016 menggantikan Ignasius Jonan
-                    </p>
+                    <p>{user.map((item) => item.tentang)}</p>
                   </div>
                   <div className="col-md-2 offset-md-4">
                     <a href="/profile/datadiri" className="btn btn-secondary">

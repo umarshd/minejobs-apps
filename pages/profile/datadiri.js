@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import DataDiriPage from "../../components/dashboard/profile/DataDiriPage";
 import Header from "../../components/layouts/Header";
 import Sidebar from "../../components/layouts/dashboard/profile/SidebarProfile";
@@ -12,6 +12,7 @@ import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
 
 export default function datadiri() {
+  const { user } = useContext(UserContext);
   const { token, uid } = useContext(UserContext);
   const [form, setForm] = useState({
     nama_depan: null,
@@ -22,7 +23,6 @@ export default function datadiri() {
     tentang: null,
     foto_profile: null,
   });
-  const [data, setData] = useState([]);
 
   const handleChange = (e) => {
     setForm({
@@ -113,63 +113,43 @@ export default function datadiri() {
 
   let setNamaDepan = form.nama_depan
     ? form.nama_depan
-    : data.map((item) => item.nama_depan);
+    : user.map((item) => item.nama_depan);
 
   let getNamaDepan = setNamaDepan.toString();
 
   let setNamaBelakang = form.nama_belakang
     ? form.nama_belakang
-    : data.map((item) => item.nama_belakang);
+    : user.map((item) => item.nama_belakang);
 
   let getNamaBelakang = setNamaBelakang.toString();
 
   let setNomorTelepon = form.nomor_telepon
     ? form.nomor_telepon
-    : data.map((item) => item.nomor_telepon);
+    : user.map((item) => item.nomor_telepon);
 
   let getNomorTelepon = setNomorTelepon.toString();
 
   let setProvinsi = form.provinsi
     ? form.provinsi
-    : data.map((item) => item.provinsi);
+    : user.map((item) => item.provinsi);
 
   let getProvinsi = setProvinsi.toString();
 
-  let setKota = form.kota ? form.kota : data.map((item) => item.kota);
+  let setKota = form.kota ? form.kota : user.map((item) => item.kota);
 
   let getKota = setKota.toString();
 
   let setTentang = form.tentang
     ? form.tentang
-    : data.map((item) => item.tentang);
+    : user.map((item) => item.tentang);
 
   let getTentang = setTentang.toString();
 
   let setFotoProfile = form.foto_profile
     ? form.foto_profile
-    : data.map((item) => item.foto_profile);
+    : user.map((item) => item.foto_profile);
 
   let getFotoProfile = setFotoProfile.toString();
-
-  useEffect(() => {
-    const API = `${
-      process.env.NEXT_PUBLIC_ENDPOINT + "api/data-pribadi/" + uid
-    }`;
-
-    axios({
-      url: API,
-      method: "GET",
-      headers: {
-        authorization: `Bearer ${token}`,
-      },
-    })
-      .then((res) => {
-        setData(res.data.data.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
 
   return (
     <>
@@ -182,7 +162,7 @@ export default function datadiri() {
           <div className="row">
             <Sidebar active={"active"} />
             <DataDiriPage
-              data={data}
+              user={user}
               form={form}
               handleChange={handleChange}
               handleCreate={handleCreate}

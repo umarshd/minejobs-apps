@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 
 export default function DataDiriPage({
-  data,
+  user,
   handleChange,
   handleCreate,
   handleUpdate,
@@ -22,7 +22,7 @@ export default function DataDiriPage({
             <hr />
             <div className="row justify-content-center">
               <div className="col-md-8">
-                {data.length > 0 ? (
+                {user.length > 0 ? (
                   <>
                     <form onSubmit={handleUpdate}>
                       <div className="row">
@@ -36,7 +36,7 @@ export default function DataDiriPage({
                               aria-describedby="firstName"
                               placeholder="Nama Depan"
                               name="nama_depan"
-                              defaultValue={data.map((item) => item.nama_depan)}
+                              defaultValue={user.map((item) => item.nama_depan)}
                               onChange={handleChange}
                             />
                           </div>
@@ -51,7 +51,7 @@ export default function DataDiriPage({
                               aria-describedby="lastName"
                               placeholder="Nama Belakang"
                               name="nama_belakang"
-                              defaultValue={data.map(
+                              defaultValue={user.map(
                                 (item) => item.nama_belakang
                               )}
                               onChange={handleChange}
@@ -70,7 +70,7 @@ export default function DataDiriPage({
                               aria-describedby="phoneNumber"
                               placeholder="Nomer Telepon"
                               name="nomor_telepon"
-                              defaultValue={data.map(
+                              defaultValue={user.map(
                                 (item) => item.nomor_telepon
                               )}
                               onChange={handleChange}
@@ -89,7 +89,7 @@ export default function DataDiriPage({
                               aria-describedby="email"
                               placeholder="Email"
                               name="email"
-                              defaultValue={data.map((item) => item.email)}
+                              defaultValue={user.map((item) => item.email)}
                               onChange={handleChange}
                             />
                           </div>
@@ -109,7 +109,7 @@ export default function DataDiriPage({
                             name="provinsi"
                             onChange={handleChange}
                           >
-                            <option>{data.map((item) => item.provinsi)}</option>
+                            <option>{user.map((item) => item.provinsi)}</option>
                             <option value="Jakarta">Jakarta</option>
                             <option value="Bandung">Bandung</option>
                             <option value="">Three</option>
@@ -122,7 +122,7 @@ export default function DataDiriPage({
                             name="kota"
                             onChange={handleChange}
                           >
-                            <option>{data.map((item) => item.kota)}</option>
+                            <option>{user.map((item) => item.kota)}</option>
                             <option value="Jakarta Selatan">
                               Jakarta Selatan
                             </option>
@@ -159,7 +159,7 @@ export default function DataDiriPage({
                               rows={3}
                               name="tentang"
                               onChange={handleChange}
-                              defaultValue={data.map((item) => item.tentang)}
+                              defaultValue={user.map((item) => item.tentang)}
                             />
                           </div>
                         </div>
@@ -187,7 +187,7 @@ export default function DataDiriPage({
                               aria-describedby="firstName"
                               placeholder="Nama Depan"
                               name="nama_depan"
-                              defaultValue={data.map((item) => item.nama_depan)}
+                              defaultValue={user.map((item) => item.nama_depan)}
                               onChange={handleChange}
                             />
                           </div>
@@ -202,7 +202,7 @@ export default function DataDiriPage({
                               aria-describedby="lastName"
                               placeholder="Nama Belakang"
                               name="nama_belakang"
-                              defaultValue={data.map(
+                              defaultValue={user.map(
                                 (item) => item.nama_belakang
                               )}
                               onChange={handleChange}
@@ -221,7 +221,7 @@ export default function DataDiriPage({
                               aria-describedby="phoneNumber"
                               placeholder="Nomer Telepon"
                               name="nomor_telepon"
-                              defaultValue={data.map(
+                              defaultValue={user.map(
                                 (item) => item.nomor_telepon
                               )}
                               onChange={handleChange}
@@ -240,7 +240,7 @@ export default function DataDiriPage({
                               aria-describedby="email"
                               placeholder="Email"
                               name="email"
-                              defaultValue={data.map((item) => item.email)}
+                              defaultValue={user.map((item) => item.email)}
                               onChange={handleChange}
                             />
                           </div>
@@ -310,7 +310,7 @@ export default function DataDiriPage({
                               rows={3}
                               name="tentang"
                               onChange={handleChange}
-                              defaultValue={data.map((item) => item.tentang)}
+                              defaultValue={user.map((item) => item.tentang)}
                             />
                           </div>
                         </div>
