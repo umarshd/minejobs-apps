@@ -12,8 +12,7 @@ import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
 
 export default function datadiri() {
-  const { user } = useContext(UserContext);
-  const { token, uid } = useContext(UserContext);
+  const { user, token, uid } = useContext(UserContext);
   const [form, setForm] = useState({
     nama_depan: null,
     nama_belakang: null,
