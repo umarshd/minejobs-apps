@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Fragment } from "react";
+import NumberFormat from "react-number-format";
 
-export default function CariLowonganPage() {
+export default function CariLowonganPage({ data, handleFilter, submitFilter }) {
   return (
     <>
       <div className="col-md-7 col-lg-9">
@@ -12,22 +13,17 @@ export default function CariLowonganPage() {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <form>
+                <form onSubmit={submitFilter}>
                   <div className="input-group mb-3">
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Recipient's username"
-                      aria-label="Recipient's username"
-                      aria-describedby="basic-addon2"
+                      name="query"
+                      onChange={handleFilter}
                       placeholder="Cari Pekerjaan berdasarkan lokasi, jabatan, keahlian"
                     />
                     <div className="input-group-append">
-                      <button
-                        type="submit"
-                        className=" btn btn-custom"
-                        id="basic-addon2"
-                      >
+                      <button className=" btn btn-custom" id="basic-addon2">
                         Cari
                       </button>
                     </div>
@@ -59,6 +55,8 @@ export default function CariLowonganPage() {
                           type="checkbox"
                           className="mr-2"
                           value="DKI Jakarta"
+                          name="query"
+                          onChange={handleFilter}
                         />
                         DKI Jakarta
                       </div>
@@ -67,6 +65,8 @@ export default function CariLowonganPage() {
                           type="checkbox"
                           className="mr-2"
                           value="Jawa Barat"
+                          name="query"
+                          onChange={handleFilter}
                         />
                         Jawa Barat
                       </div>
@@ -92,11 +92,19 @@ export default function CariLowonganPage() {
                           type="checkbox"
                           className="mr-2"
                           value="Video Editing"
+                          name="query"
+                          onChange={handleFilter}
                         />
                         Video Editing
                       </div>
                       <div className="col-md-12">
-                        <input type="checkbox" className="mr-2" value="HTML" />
+                        <input
+                          type="checkbox"
+                          className="mr-2"
+                          value="HTML"
+                          name="query"
+                          onChange={handleFilter}
+                        />
                         HTML
                       </div>
                       <div className="col-md-12">
@@ -104,6 +112,8 @@ export default function CariLowonganPage() {
                           type="checkbox"
                           className="mr-2"
                           value="Adobe Illustrator"
+                          name="query"
+                          onChange={handleFilter}
                         />
                         Adobe Illustrator
                       </div>
@@ -129,6 +139,8 @@ export default function CariLowonganPage() {
                           type="checkbox"
                           className="mr-2"
                           value="Manager"
+                          name="query"
+                          onChange={handleFilter}
                         />
                         Manager
                       </div>
@@ -137,6 +149,8 @@ export default function CariLowonganPage() {
                           type="checkbox"
                           className="mr-2"
                           value="Senior Software Engineer"
+                          name="query"
+                          onChange={handleFilter}
                         />
                         Senior Software Engineer
                       </div>
@@ -145,6 +159,8 @@ export default function CariLowonganPage() {
                           type="checkbox"
                           className="mr-2"
                           value="Full Stack Web Developer"
+                          name="query"
+                          onChange={handleFilter}
                         />
                         Full Stack Web Developer
                       </div>
@@ -158,142 +174,62 @@ export default function CariLowonganPage() {
               <div className="col-md-12">
                 <p>Menampilkan Hasil 1 - 15 dari 153 hasil</p>
               </div>
-              <div className="col-md-12">
-                <div className="card">
-                  <div className="row">
-                    <div className="col-md-3">
-                      <img className="img-fluid" src="/bg-home.jpg" />
-                    </div>
-                    <div className="col-md-6 mb-auto mt-auto">
-                      <div className="job-description">
-                        <div className="job-title">
-                          Full Stack Web Developer
+
+              {data.map((items, index) => (
+                <Fragment key={index}>
+                  <div className="col-md-12">
+                    <div className="card">
+                      <div className="row">
+                        <div className="col-md-3">
+                          <img className="img-fluid" src="/bg-home.jpg" />
                         </div>
-                        <div className="corporate">Orangtua Group</div>
-                        <div className="job-location">
-                          Jawa Tengah, Semarang
+                        <div className="col-md-6 mb-auto mt-auto">
+                          <div className="job-description">
+                            <div className="job-title">
+                              {items.posisi_pekerjaan}
+                            </div>
+                            <div className="corporate">
+                              {items.nama_perusahaan}
+                            </div>
+                            <div className="job-location">
+                              {items.provinsi}, {items.kota}
+                            </div>
+                            <div className="salary">
+                              <NumberFormat
+                                value={items.gaji_min}
+                                displayType={"text"}
+                                thousandSeparator="."
+                                decimalSeparator=","
+                                prefix={"Rp "}
+                              />{" "}
+                              -{" "}
+                              <NumberFormat
+                                value={items.gaji_max}
+                                displayType={"text"}
+                                thousandSeparator="."
+                                decimalSeparator=","
+                                prefix={"Rp "}
+                              />{" "}
+                              / Bulan
+                            </div>
+                          </div>
                         </div>
-                        <div className="salary">
-                          Rp.4.000.000 - Rp.8.000.000 / Bulan
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-2 mr-2 mt-auto mb-auto">
-                      <a
-                        href="/jobdetail"
-                        className="btn btn-primary btn-block"
-                      >
-                        Detail
-                      </a>
-                      <a href="#" className="btn bg-custom-12 btn-block">
-                        Simpan
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-12">
-                <div className="card">
-                  <div className="row">
-                    <div className="col-md-3">
-                      <img className="img-fluid" src="/bg-home.jpg" />
-                    </div>
-                    <div className="col-md-6 mb-auto mt-auto">
-                      <div className="job-description">
-                        <div className="job-title">
-                          Full Stack Web Developer
-                        </div>
-                        <div className="coporate">Orangtua Group</div>
-                        <div className="job-location">
-                          Jawa Tengah, Semarang
-                        </div>
-                        <div className="salary">
-                          Rp.4.000.000 - Rp.8.000.000 / Bulan
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-2 mr-2 mt-auto mb-auto">
-                      <a
-                        href="/jobdetail"
-                        className="btn btn-primary btn-block"
-                      >
-                        Detail
-                      </a>
-                      <a href="#" className="btn bg-custom-12 btn-block">
-                        Simpan
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-12">
-                <div className="card">
-                  <div className="row">
-                    <div className="col-md-3">
-                      <img className="img-fluid" src="/bg-home.jpg" />
-                    </div>
-                    <div className="col-md-6 mb-auto mt-auto">
-                      <div className="job-description">
-                        <div className="job-title">
-                          Full Stack Web Developer
-                        </div>
-                        <div className="corporate">Orangtua Group</div>
-                        <div className="job-location">
-                          Jawa Tengah, Semarang
-                        </div>
-                        <div className="salary">
-                          Rp.4.000.000 - RP.8.000.000 / Bulan
+                        <div className="col-md-2 mr-2 mt-auto mb-auto">
+                          <a
+                            href="/jobdetail"
+                            className="btn btn-primary btn-block"
+                          >
+                            Detail
+                          </a>
+                          <a href="#" className="btn bg-custom-12 btn-block">
+                            Simpan
+                          </a>
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-2 mr-2 mt-auto mb-auto">
-                      <a
-                        href="/jobdetail"
-                        className="btn btn-primary btn-block"
-                      >
-                        Detail
-                      </a>
-                      <a href="#" className="btn bg-custom-12 btn-block">
-                        Simpan
-                      </a>
-                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="col-md-12">
-                <div className="card">
-                  <div className="row">
-                    <div className="col-md-3">
-                      <img className="img-fluid" src="/bg-home.jpg" />
-                    </div>
-                    <div className="col-md-6 mb-auto mt-auto">
-                      <div className="job-description">
-                        <div className="job-title">
-                          Full Stack Web Developer
-                        </div>
-                        <div className="corporate">Orangtua Group</div>
-                        <div className="job-location">
-                          Jawa Tengah, Semarang
-                        </div>
-                        <div className="salary">
-                          Rp.4.000.000 - Rp.8.000.000 / Bulan
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-2 mr-2 mt-auto mb-auto">
-                      <a
-                        href="/jobdetail"
-                        className="btn btn-primary btn-block"
-                      >
-                        Detail
-                      </a>
-                      <a href="#" className="btn bg-custom-12 btn-block">
-                        Simpan
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                </Fragment>
+              ))}
             </div>
             <div className="row justify-content-center mt-4">
               <div className="col-4">
