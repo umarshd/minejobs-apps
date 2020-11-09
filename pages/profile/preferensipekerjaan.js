@@ -6,6 +6,11 @@ import Sidebar from "../../components/layouts/dashboard/profile/SidebarProfile";
 import { UserContext } from "../../contexts/UserContext";
 import axios from "axios";
 
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
+
 export default function preferensipekerjaan() {
   const { token, uid } = useContext(UserContext);
 
@@ -14,8 +19,8 @@ export default function preferensipekerjaan() {
   const [form, setForm] = useState({
     gaji_diharapkan: "",
     provinsi: "",
-    kota: "",
-    bidang_pekerjaan: "",
+    kota: "Test",
+    bidang_pekerjaan: "Test",
   });
 
   useEffect(() => {
@@ -31,7 +36,7 @@ export default function preferensipekerjaan() {
       },
     })
       .then((res) => {
-        setData(res.data);
+        setData(res.data.data.data);
       })
       .catch((err) => {
         console.log(err);
@@ -59,6 +64,7 @@ export default function preferensipekerjaan() {
         authorization: `Bearer ${token}`,
       },
       data: {
+        id_kandidat: uid,
         gaji_diharapkan: form.gaji_diharapkan,
         provinsi: form.provinsi,
         kota: form.kota,
@@ -66,16 +72,74 @@ export default function preferensipekerjaan() {
       },
     })
       .then((res) => {
-        console.log(res);
+        MySwal.fire({
+          icon: "success",
+          title: "Data Tersimpan",
+          text: "Data diri yang Anda masukan telah tersimpan",
+        });
       })
       .catch((err) => {
         console.log(err);
+        MySwal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong!",
+        });
       });
   };
 
   const handleUpdate = (e) => {
     e.preventDefault();
+
+    const API = `${
+      process.env.NEXT_PUBLIC_ENDPOINT + "api/preferensi-pekerjaan/" + uid
+    }`;
+
+    axios({
+      url: API,
+      method: "PUT",
+      headers: {
+        authorization: `Bearer ${token}`,
+      },
+      data: {
+        id_kandidat: uid,
+        gaji_diharapkan: getGajiDiharapkan,
+        provinsi: getProvinsi,
+        kota: "semarang",
+        bidang_pekerjaan: "teknologi di edit",
+      },
+    })
+      .then((res) => {
+        MySwal.fire({
+          icon: "success",
+          title: "Data Terupdate",
+          text: "Data diri yang Anda masukan telah terupdate",
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        MySwal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong!",
+        });
+      });
   };
+
+  let setGajiDiharapkan = form.gaji_diharapkan
+    ? form.gaji_diharapkan
+    : data.map((item) => item.gaji_diharapkan);
+
+  let getGajiDiharapkan = setGajiDiharapkan.toString();
+
+  let setProvinsi = form.provinsi
+    ? form.provinsi
+    : data.map((item) => item.provinsi);
+
+  let getProvinsi = setProvinsi.toString();
+
+  console.log("Form input", form);
+  console.log("Data", data);
 
   return (
     <>
@@ -91,6 +155,7 @@ export default function preferensipekerjaan() {
               data={data}
               handleChange={handleChange}
               handleCreate={handleCreate}
+              handleUpdate={handleUpdate}
             />
           </div>
         </div>

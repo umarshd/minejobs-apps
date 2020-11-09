@@ -4,6 +4,7 @@ export default function PreferensiPekerjaanPage({
   data,
   handleChange,
   handleCreate,
+  handleUpdate,
 }) {
   return (
     <>
@@ -24,7 +25,49 @@ export default function PreferensiPekerjaanPage({
             <div className="row justify-content-center">
               <div className="col-md-8">
                 {data.length > 0 ? (
-                  <></>
+                  <>
+                    <form onSubmit={handleUpdate}>
+                      <div className="form-group">
+                        <label htmlFor="posisi">Gaji yang diharapkan</label>
+                        <input
+                          type="number"
+                          className="form-control"
+                          id="gaji"
+                          aria-describedby="gaji"
+                          defaultValue={data.map(
+                            (item) => item.gaji_diharapkan
+                          )}
+                          name="gaji_diharapkan"
+                          onChange={handleChange}
+                        />
+                      </div>
+                      <div className="form-group">
+                        <label htmlFor="lokasi">Lokasi yang diharapkan</label>
+                        <select
+                          className="custom-select"
+                          id="lokasi"
+                          name="provinsi"
+                          onChange={handleChange}
+                        >
+                          <option
+                            defaultValue={data.map((item) => item.provinsi)}
+                          >
+                            {data.map((item) => item.provinsi)}
+                          </option>
+                          <option value="Jakarta">Jakarta</option>
+                          <option value="Bali">Bali</option>
+                          <option value="Banten">Banten</option>
+                        </select>
+                      </div>
+                      <div className="row">
+                        <div className="col text-center">
+                          <button className="btn btn-primary mb-3 mt-3">
+                            Simpan
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </>
                 ) : (
                   <>
                     <form onSubmit={handleCreate}>
