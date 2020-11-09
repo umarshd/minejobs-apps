@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CompanyPage() {
+export default function CompanyPage({}) {
   return (
     <>
       <section className="company-promo">

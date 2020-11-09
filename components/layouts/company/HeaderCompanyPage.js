@@ -1,6 +1,10 @@
 import React from "react";
 
-export default function HeaderCompanyPage() {
+export default function HeaderCompanyPage({
+  handleChange,
+  handleRegister,
+  handleLogin,
+}) {
   return (
     <>
       <header>
@@ -59,7 +63,7 @@ export default function HeaderCompanyPage() {
                   <br />
                   Masuk Dengan Email
                 </p>
-                <form className="loginForm">
+                <form className="loginForm" onSubmit={handleLogin}>
                   <div className="row">
                     <div className="col-md-12">
                       <div className="form-group">
@@ -69,6 +73,8 @@ export default function HeaderCompanyPage() {
                           id="email"
                           aria-describedby="email"
                           placeholder="Email"
+                          name="emailLogin"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -82,13 +88,13 @@ export default function HeaderCompanyPage() {
                           id="password"
                           aria-describedby="password"
                           placeholder="Kata Sandi"
+                          name="passwordLogin"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
                   </div>
-                  <button type="submit" className="btn btn-primary mt-4 mb-4">
-                    Masuk
-                  </button>
+                  <button className="btn btn-primary mt-4 mb-4">Masuk</button>
                 </form>
               </div>
             </div>
@@ -103,7 +109,7 @@ export default function HeaderCompanyPage() {
                     Daftar dan Dapatkan <br />
                     Satu Iklan Gratis
                   </h3>
-                  <form method="post">
+                  <form onSubmit={handleRegister}>
                     <div className="form-group pl-5 pr-5">
                       <label htmlFor="nama">Nama</label>
                       <input
@@ -112,6 +118,8 @@ export default function HeaderCompanyPage() {
                         id="nama"
                         aria-describedby="nama"
                         placeholder="Nama"
+                        name="nama"
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="form-group pl-5 pr-5">
@@ -121,6 +129,8 @@ export default function HeaderCompanyPage() {
                         className="form-control"
                         id="namaPerusahaan"
                         placeholder="Nama Perusahaan"
+                        name="namaPerusahaan"
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="form-group pl-5 pr-5">
@@ -130,6 +140,8 @@ export default function HeaderCompanyPage() {
                         className="form-control"
                         id="nomerHandphone"
                         placeholder="Nomer Handphone"
+                        name="nomorHandphone"
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="form-group pl-5 pr-5">
@@ -139,15 +151,19 @@ export default function HeaderCompanyPage() {
                         className="form-control"
                         id="emailCompany"
                         placeholder="Email"
+                        name="emailSignup"
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="form-group pl-5 pr-5">
                       <label htmlFor="kataSandi">Kata Sandi</label>
                       <input
-                        type="text"
+                        type="password"
                         className="form-control"
                         id="kataSandi"
                         placeholder="Kata Sandi"
+                        name="passwordSignup"
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="form-group pl-5 pr-5">
@@ -158,7 +174,7 @@ export default function HeaderCompanyPage() {
                     </div>
                     <div className="row text-center">
                       <div className="col-md-12">
-                        <button type="submit" className="btn btn-primary">
+                        <button className="btn btn-primary">
                           Daftar Sekarang
                         </button>
                       </div>
