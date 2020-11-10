@@ -11,18 +11,20 @@ export default function Company({ children }) {
 
   useEffect(() => {
     const API = `${
-      process.env.NEXT_PUBLIC_ENDPOINT + "/api/profil-perusahaan/" + cid
+      process.env.NEXT_PUBLIC_ENDPOINT + "/api/perusahaan/getuser"
     }`;
 
     axios({
       url: API,
       method: "GET",
       headers: {
-        authorization: `Bearer ${tokenCompany}`,
+        authorization: `Bearer ${
+          tokenCompany ? tokenCompany.slice(0, -1) : null
+        }`,
       },
     })
       .then((res) => {
-        setCompany(res.data);
+        setCompany(res.data.data);
       })
       .catch((err) => {
         console.log(err);

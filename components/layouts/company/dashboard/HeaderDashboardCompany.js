@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CompanyContext } from "../../../../contexts/CompanyContext";
 
 export default function HeaderDashboardCompany() {
+  const { company, handleLogout } = useContext(CompanyContext);
+
+  console.log(company);
   return (
     <>
       <header className="mb-5">
@@ -50,7 +54,7 @@ export default function HeaderDashboardCompany() {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Budi
+                  {company.map((item) => item.nama_perusahaan)}
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="/company/dashboard/company">
@@ -59,7 +63,7 @@ export default function HeaderDashboardCompany() {
                   <a class="dropdown-item" href="/company/admin/perusahaan">
                     Admin
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="#" onClick={handleLogout}>
                     Logout
                   </a>
                 </div>
