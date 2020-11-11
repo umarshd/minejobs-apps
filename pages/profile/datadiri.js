@@ -13,6 +13,9 @@ const MySwal = withReactContent(Swal);
 
 export default function datadiri() {
   const { user, token, uid } = useContext(UserContext);
+  const [file, setFile] = useState({
+    image: "",
+  });
   const [form, setForm] = useState({
     nama_depan: null,
     nama_belakang: null,
@@ -30,6 +33,13 @@ export default function datadiri() {
     });
   };
 
+  const handleFile = (e) => {
+    setFile({
+      ...file,
+      [e.target.name]: e.target.files[0],
+    });
+  };
+
   const handleCreate = (e) => {
     e.preventDefault();
 
@@ -40,6 +50,7 @@ export default function datadiri() {
       method: "POST",
       headers: {
         authorization: `Bearer ${token}`,
+        "Content-Type": "multipart/form-data",
       },
       data: {
         id_kandidat: uid,
@@ -49,7 +60,7 @@ export default function datadiri() {
         provinsi: form.provinsi,
         kota: form.kota,
         tentang: form.tentang,
-        foto_profile: form.foto_profile,
+        image: file.image,
       },
     })
       .then((res) => {
@@ -90,7 +101,7 @@ export default function datadiri() {
         provinsi: getProvinsi,
         kota: getKota,
         tentang: getTentang,
-        foto_profile: getFotoProfile,
+        image: getFotoProfile,
       },
     })
       .then((res) => {
@@ -144,11 +155,13 @@ export default function datadiri() {
 
   let getTentang = setTentang.toString();
 
-  let setFotoProfile = form.foto_profile
-    ? form.foto_profile
+  let setFotoProfile = file.image
+    ? file.image
     : user.map((item) => item.foto_profile);
 
   let getFotoProfile = setFotoProfile.toString();
+
+  console.log("File Image", file);
 
   return (
     <>
@@ -166,6 +179,7 @@ export default function datadiri() {
               handleChange={handleChange}
               handleCreate={handleCreate}
               handleUpdate={handleUpdate}
+              handleFile={handleFile}
             />
           </div>
         </div>

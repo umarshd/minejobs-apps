@@ -5,6 +5,7 @@ export default function DataDiriPage({
   handleChange,
   handleCreate,
   handleUpdate,
+  handleFile,
 }) {
   return (
     <>
@@ -142,8 +143,8 @@ export default function DataDiriPage({
                                 id="foto"
                                 aria-describedby="foto"
                                 placeholder="Pilih Berkas"
-                                name="foto_profile"
-                                onChange={handleChange}
+                                name="image"
+                                onChange={handleFile}
                               />
                             </div>
                           </div>
