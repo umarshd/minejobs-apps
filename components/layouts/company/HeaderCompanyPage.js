@@ -4,6 +4,7 @@ export default function HeaderCompanyPage({
   handleChange,
   handleRegister,
   handleLogin,
+  loading,
 }) {
   return (
     <>
@@ -63,39 +64,49 @@ export default function HeaderCompanyPage({
                   <br />
                   Masuk Dengan Email
                 </p>
-                <form className="loginForm" onSubmit={handleLogin}>
-                  <div className="row">
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <input
-                          type="email"
-                          className="form-control"
-                          id="email"
-                          aria-describedby="email"
-                          placeholder="Email"
-                          name="emailLogin"
-                          onChange={handleChange}
-                        />
+                {loading ? (
+                  <>
+                    <p>Please wait...</p>
+                  </>
+                ) : (
+                  <>
+                    <form className="loginForm" onSubmit={handleLogin}>
+                      <div className="row">
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <input
+                              type="email"
+                              className="form-control"
+                              id="email"
+                              aria-describedby="email"
+                              placeholder="Email"
+                              name="emailLogin"
+                              onChange={handleChange}
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <input
-                          type="password"
-                          className="form-control"
-                          id="password"
-                          aria-describedby="password"
-                          placeholder="Kata Sandi"
-                          name="passwordLogin"
-                          onChange={handleChange}
-                        />
+                      <div className="row">
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <input
+                              type="password"
+                              className="form-control"
+                              id="password"
+                              aria-describedby="password"
+                              placeholder="Kata Sandi"
+                              name="passwordLogin"
+                              onChange={handleChange}
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <button className="btn btn-primary mt-4 mb-4">Masuk</button>
-                </form>
+                      <button className="btn btn-primary mt-4 mb-4">
+                        Masuk
+                      </button>
+                    </form>
+                  </>
+                )}
               </div>
             </div>
           </div>
@@ -109,77 +120,89 @@ export default function HeaderCompanyPage({
                     Daftar dan Dapatkan <br />
                     Satu Iklan Gratis
                   </h3>
-                  <form onSubmit={handleRegister}>
-                    <div className="form-group pl-5 pr-5">
-                      <label htmlFor="nama">Nama</label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="nama"
-                        aria-describedby="nama"
-                        placeholder="Nama"
-                        name="nama"
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className="form-group pl-5 pr-5">
-                      <label htmlFor="namaPerusahaan">Nama Perusahaan</label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="namaPerusahaan"
-                        placeholder="Nama Perusahaan"
-                        name="namaPerusahaan"
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className="form-group pl-5 pr-5">
-                      <label htmlFor="nomerHandphone">Nomer Handphone</label>
-                      <input
-                        type="number"
-                        className="form-control"
-                        id="nomerHandphone"
-                        placeholder="Nomer Handphone"
-                        name="nomorHandphone"
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className="form-group pl-5 pr-5">
-                      <label htmlFor="emailCompany">Email</label>
-                      <input
-                        type="email"
-                        className="form-control"
-                        id="emailCompany"
-                        placeholder="Email"
-                        name="emailSignup"
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className="form-group pl-5 pr-5">
-                      <label htmlFor="kataSandi">Kata Sandi</label>
-                      <input
-                        type="password"
-                        className="form-control"
-                        id="kataSandi"
-                        placeholder="Kata Sandi"
-                        name="passwordSignup"
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className="form-group pl-5 pr-5">
-                      <span>
-                        Dengan melanjutkan, Anda telah menyetujui Kebijakan
-                        Privasi dan Syarat & Ketentuan Minejobs
-                      </span>
-                    </div>
-                    <div className="row text-center">
-                      <div className="col-md-12">
-                        <button className="btn btn-primary">
-                          Daftar Sekarang
-                        </button>
-                      </div>
-                    </div>
-                  </form>
+                  {loading ? (
+                    <>
+                      <p>Please wait...</p>
+                    </>
+                  ) : (
+                    <>
+                      <form onSubmit={handleRegister}>
+                        <div className="form-group pl-5 pr-5">
+                          <label htmlFor="nama">Nama</label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="nama"
+                            aria-describedby="nama"
+                            placeholder="Nama"
+                            name="nama"
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <div className="form-group pl-5 pr-5">
+                          <label htmlFor="namaPerusahaan">
+                            Nama Perusahaan
+                          </label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="namaPerusahaan"
+                            placeholder="Nama Perusahaan"
+                            name="namaPerusahaan"
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <div className="form-group pl-5 pr-5">
+                          <label htmlFor="nomerHandphone">
+                            Nomer Handphone
+                          </label>
+                          <input
+                            type="number"
+                            className="form-control"
+                            id="nomerHandphone"
+                            placeholder="Nomer Handphone"
+                            name="nomorHandphone"
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <div className="form-group pl-5 pr-5">
+                          <label htmlFor="emailCompany">Email</label>
+                          <input
+                            type="email"
+                            className="form-control"
+                            id="emailCompany"
+                            placeholder="Email"
+                            name="emailSignup"
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <div className="form-group pl-5 pr-5">
+                          <label htmlFor="kataSandi">Kata Sandi</label>
+                          <input
+                            type="password"
+                            className="form-control"
+                            id="kataSandi"
+                            placeholder="Kata Sandi"
+                            name="passwordSignup"
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <div className="form-group pl-5 pr-5">
+                          <span>
+                            Dengan melanjutkan, Anda telah menyetujui Kebijakan
+                            Privasi dan Syarat & Ketentuan Minejobs
+                          </span>
+                        </div>
+                        <div className="row text-center">
+                          <div className="col-md-12">
+                            <button className="btn btn-primary">
+                              Daftar Sekarang
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

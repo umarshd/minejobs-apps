@@ -10,6 +10,7 @@ import CompanyPage from "../components/company/CompanyPage";
 
 export default function company() {
   const { tokenCompany, cid } = useContext(CompanyContext);
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState(null);
 
   const handleChange = (e) => {
@@ -21,6 +22,7 @@ export default function company() {
 
   const handleRegister = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const API = `${
       process.env.NEXT_PUBLIC_ENDPOINT + "api/perusahaan/register"
@@ -49,7 +51,7 @@ export default function company() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     const API = `${process.env.NEXT_PUBLIC_ENDPOINT + "api/perusahaan/login"}`;
 
     axios({
@@ -82,6 +84,7 @@ export default function company() {
         handleChange={handleChange}
         handleRegister={handleRegister}
         handleLogin={handleLogin}
+        loading={loading}
       />
       <main>
         <div className="container">

@@ -7,6 +7,7 @@ import axios from "axios";
 export default function HeaderHomePage() {
   const router = useRouter();
   const [form, setForm] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const { token, uid } = useContext(UserContext);
 
@@ -22,6 +23,7 @@ export default function HeaderHomePage() {
 
   const handleRegister = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const API = `${process.env.NEXT_PUBLIC_ENDPOINT + "api/kandidat/register"}`;
 
@@ -48,6 +50,8 @@ export default function HeaderHomePage() {
 
   const handleLogin = (e) => {
     e.preventDefault();
+
+    setLoading(true);
 
     const API = `${process.env.NEXT_PUBLIC_ENDPOINT + "api/kandidat/login"}`;
 
@@ -144,90 +148,98 @@ export default function HeaderHomePage() {
                   <br />
                   Daftar Dengan Email
                 </p>
-                <form onSubmit={handleRegister} className="signupForm">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="firstName"
-                          aria-describedby="firstName"
-                          placeholder="Nama Depan"
-                          name="firstName"
-                          onChange={handleChange}
-                        />
+                {loading ? (
+                  <>
+                    <p>Please wait...</p>
+                  </>
+                ) : (
+                  <>
+                    <form onSubmit={handleRegister} className="signupForm">
+                      <div className="row">
+                        <div className="col-md-6">
+                          <div className="form-group">
+                            <input
+                              type="text"
+                              className="form-control"
+                              id="firstName"
+                              aria-describedby="firstName"
+                              placeholder="Nama Depan"
+                              name="firstName"
+                              onChange={handleChange}
+                            />
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="form-group">
+                            <input
+                              type="text"
+                              className="form-control"
+                              id="lastName"
+                              aria-describedby="lastName"
+                              placeholder="Nama Belakang"
+                              name="lastName"
+                              onChange={handleChange}
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="lastName"
-                          aria-describedby="lastName"
-                          placeholder="Nama Belakang"
-                          name="lastName"
-                          onChange={handleChange}
-                        />
+                      <div className="row">
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <input
+                              type="email"
+                              className="form-control"
+                              id="emailSignup"
+                              aria-describedby="email"
+                              placeholder="Email"
+                              name="emailSignup"
+                              onChange={handleChange}
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <input
-                          type="email"
-                          className="form-control"
-                          id="emailSignup"
-                          aria-describedby="email"
-                          placeholder="Email"
-                          name="emailSignup"
-                          onChange={handleChange}
-                        />
+                      <div className="row">
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <input
+                              type="password"
+                              className="form-control"
+                              id="passwordSignup"
+                              aria-describedby="password"
+                              placeholder="Kata Sandi"
+                              name="passwordSignup"
+                              onChange={handleChange}
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <input
-                          type="password"
-                          className="form-control"
-                          id="passwordSignup"
-                          aria-describedby="password"
-                          placeholder="Kata Sandi"
-                          name="passwordSignup"
-                          onChange={handleChange}
-                        />
+                      <div className="row text-left pl-1">
+                        <div className="col-md-12">
+                          <div className="form-check form-check-inline ">
+                            <input
+                              className="form-check-input"
+                              type="checkbox"
+                              id="inlineCheckbox1"
+                              defaultValue="setuju"
+                              name="signupCheck"
+                              onChange={handleChange}
+                            />
+                            <label
+                              className="form-check-label mt-4 ml-1"
+                              htmlFor="inlineCheckbox1"
+                            >
+                              Saya telah setuju dengan syarat dan ketentuan yang
+                              berlaku
+                            </label>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="row text-left pl-1">
-                    <div className="col-md-12">
-                      <div className="form-check form-check-inline ">
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          id="inlineCheckbox1"
-                          defaultValue="setuju"
-                          name="signupCheck"
-                          onChange={handleChange}
-                        />
-                        <label
-                          className="form-check-label mt-4 ml-1"
-                          htmlFor="inlineCheckbox1"
-                        >
-                          Saya telah setuju dengan syarat dan ketentuan yang
-                          berlaku
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <button className="btn btn-primary mt-4 mb-4">
-                    Daftar Sekarang
-                  </button>
-                </form>
+                      <button className="btn btn-primary mt-4 mb-4">
+                        Daftar Sekarang
+                      </button>
+                    </form>
+                  </>
+                )}
               </div>
             </div>
           </div>
@@ -255,39 +267,49 @@ export default function HeaderHomePage() {
                   <br />
                   Masuk Dengan Email
                 </p>
-                <form onSubmit={handleLogin} className="loginForm">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <input
-                          type="email"
-                          className="form-control"
-                          id="emailLogin"
-                          aria-describedby="email"
-                          placeholder="Email"
-                          name="emailLogin"
-                          onChange={handleChange}
-                        />
+                {loading ? (
+                  <>
+                    <p>Please wait...</p>
+                  </>
+                ) : (
+                  <>
+                    <form onSubmit={handleLogin} className="loginForm">
+                      <div className="row">
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <input
+                              type="email"
+                              className="form-control"
+                              id="emailLogin"
+                              aria-describedby="email"
+                              placeholder="Email"
+                              name="emailLogin"
+                              onChange={handleChange}
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <input
-                          type="password"
-                          className="form-control"
-                          id="passwordLogin"
-                          aria-describedby="password"
-                          placeholder="Kata Sandi"
-                          name="passwordLogin"
-                          onChange={handleChange}
-                        />
+                      <div className="row">
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <input
+                              type="password"
+                              className="form-control"
+                              id="passwordLogin"
+                              aria-describedby="password"
+                              placeholder="Kata Sandi"
+                              name="passwordLogin"
+                              onChange={handleChange}
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <button className="btn btn-primary mt-4 mb-4">Masuk</button>
-                </form>
+                      <button className="btn btn-primary mt-4 mb-4">
+                        Masuk
+                      </button>
+                    </form>
+                  </>
+                )}
               </div>
             </div>
           </div>
