@@ -1,6 +1,84 @@
 import React from "react";
 
-export default function BahasaPage() {
+export default function BahasaPage({ handleIncrement, handleDecrement, loop }) {
+  const LoopData = () => {
+    let rows = [];
+    let i;
+    for (i = 0; i < loop.data; i++) {
+      rows.push(
+        <>
+          <div className="col-md-12 col-lg-3">
+            <div className="form-group">
+              <label htmlFor="bahasa">
+                <span className="font-weight-bold">Bahasa</span>
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="bahasa"
+                placeholder="Bahasa ..."
+              />
+            </div>
+          </div>
+          <div className="col-md-12 col-lg-3">
+            <div className="form-group">
+              <label htmlFor="kemampuanVerbal">
+                <span className="font-weight-bold">Kemampuan Verbal</span>
+              </label>
+              <select className="custom-select" id="kemampuanVerbal">
+                <option value={1} selected>
+                  1
+                </option>
+                <option value={2}>2</option>
+                <option value={3}>3</option>
+                <option value={4}>4</option>
+                <option value={5}>5</option>
+                <option value={6}>6</option>
+                <option value={7}>7</option>
+                <option value={8}>8</option>
+                <option value={9}>9</option>
+                <option value={10}>10</option>
+              </select>
+            </div>
+          </div>
+          <div className="col-md-12 col-lg-3">
+            <div className="form-group">
+              <label htmlFor="kemampuanTulisan">
+                <span className="font-weight-bold">Kemampuan Tulisan</span>
+              </label>
+              <select className="custom-select" id="kemampuanTulisan">
+                <option value={1} selected>
+                  1
+                </option>
+                <option value={2}>2</option>
+                <option value={3}>3</option>
+                <option value={4}>4</option>
+                <option value={5}>5</option>
+                <option value={6}>6</option>
+                <option value={7}>7</option>
+                <option value={8}>8</option>
+                <option value={9}>9</option>
+                <option value={10}>10</option>
+              </select>
+            </div>
+          </div>
+          <div className="col-md-12 col-lg-1">
+            <a href="#" onClick={handleIncrement}>
+              <i className="fas fa-plus-circle" />
+            </a>
+          </div>
+          <div className="col-md-12 col-lg-1">
+            <a href="#" onClick={handleDecrement}>
+              <i className="fas fa-minus-circle" />
+            </a>
+          </div>
+        </>
+      );
+    }
+
+    return rows;
+  };
+
   return (
     <>
       <div className="col-md-7 col-lg-9">
@@ -19,70 +97,7 @@ export default function BahasaPage() {
               <div className="col-md-12 col-lg-10">
                 <form>
                   <div className="row justify-content-center">
-                    <div className="col-md-12 col-lg-3">
-                      <div className="form-group">
-                        <label htmlFor="bahasa">
-                          <span className="font-weight-bold">Bahasa</span>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="bahasa"
-                          placeholder="Bahasa ..."
-                        />
-                      </div>
-                    </div>
-                    <div className="col-md-12 col-lg-3">
-                      <div className="form-group">
-                        <label htmlFor="kemampuanVerbal">
-                          <span className="font-weight-bold">
-                            Kemampuan Verbal
-                          </span>
-                        </label>
-                        <select className="custom-select" id="kemampuanVerbal">
-                          <option value={1} selected>
-                            1
-                          </option>
-                          <option value={2}>2</option>
-                          <option value={3}>3</option>
-                          <option value={4}>4</option>
-                          <option value={5}>5</option>
-                          <option value={6}>6</option>
-                          <option value={7}>7</option>
-                          <option value={8}>8</option>
-                          <option value={9}>9</option>
-                          <option value={10}>10</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div className="col-md-12 col-lg-3">
-                      <div className="form-group">
-                        <label htmlFor="kemampuanTulisan">
-                          <span className="font-weight-bold">
-                            Kemampuan Tulisan
-                          </span>
-                        </label>
-                        <select className="custom-select" id="kemampuanTulisan">
-                          <option value={1} selected>
-                            1
-                          </option>
-                          <option value={2}>2</option>
-                          <option value={3}>3</option>
-                          <option value={4}>4</option>
-                          <option value={5}>5</option>
-                          <option value={6}>6</option>
-                          <option value={7}>7</option>
-                          <option value={8}>8</option>
-                          <option value={9}>9</option>
-                          <option value={10}>10</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div className="col-md-12 col-lg-1">
-                      <a href="#">
-                        <i className="fas fa-plus-circle" />
-                      </a>
-                    </div>
+                    <LoopData />
                   </div>
                   <div className="row">
                     <div className="col text-center">
